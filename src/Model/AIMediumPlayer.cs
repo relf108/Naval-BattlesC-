@@ -2,9 +2,12 @@
 /// ''' The AIMediumPlayer is a type of AIPlayer where it will try and destroy a ship
 /// ''' if it has found a ship
 /// ''' </summary>
-Using System;
 
-public class AIMediumPlayer :  AIPlayer
+using System;
+using System.Collections.Generic;
+using BattleshipsC;
+
+public class AIMediumPlayer : AIPlayer
 {
     /// <summary>
     ///     ''' Private enumarator for AI states. currently there are two states,
@@ -35,30 +38,31 @@ public class AIMediumPlayer :  AIPlayer
     {
         do
         {
-            // check which state the AI Is in And uppon that choose which coordinate generation
-            // method will be used.
+// check which state the AI Is in And uppon that choose which coordinate generation
+// method will be used.
             switch (_CurrentState)
             {
-                case AIStates.Searching : 
-                    {
-                        SearchCoords(ref row, ref column);
-                        break;
-                    }
+                case AIStates.Searching:
+                {
+                    SearchCoords(ref row, ref column);
+                    break;
+                }
 
-                case AIStates.TargetingShip : 
-                    {
-                        TargetCoords(ref row, ref column);
-                        break;
-                    }
+                case AIStates.TargetingShip:
+                {
+                    TargetCoords(ref row, ref column);
+                    break;
+                }
 
-                default: 
-                    {
-                       Throw New ApplicationException("AI has gone in an imvalid state");
-                        break;
-                    }
+                default:
+                {
+                    Throw New ApplicationException("AI has gone in an imvalid state");
+                    break;
+                }
             }
-        }
-        while ((row < 0 || column < 0 || row >= EnemyGrid.Height || column >= EnemyGrid.Width || EnemyGrid.Item(row, column) != TileView.Sea)); // while inside the grid And Not a sea tile do the search
+        } while (row < 0 || column < 0 || row >= EnemyGrid.Height || column >= EnemyGrid.Width ||
+                 EnemyGrid.Item(row, column) !=
+                 TileView.Sea); // while inside the grid And Not a sea tile do the search
     }
 
     /// <summary>
@@ -70,8 +74,7 @@ public class AIMediumPlayer :  AIPlayer
     private void TargetCoords(ref int row, ref int column)
     {
         Location l = _Targets.Pop();
-
-        if ((_Targets.Count == 0))
+        if (_Targets.Count == 0)
             _CurrentState = AIStates.Searching;
         row = l.Row;
         column = l.Column;
@@ -106,8 +109,9 @@ public class AIMediumPlayer :  AIPlayer
             AddTarget(row + 1, col);
             AddTarget(row, col + 1);
         }
-        elseif (result.Value == ResultOfAttack.ShotAlready)
-    Throw New ApplicationException("Error in AI");
+
+        elseif(result.Value == ResultOfAttack.ShotAlready)
+        Throw New ApplicationException("Error in AI");
     }
 
     /// <summary>
@@ -117,8 +121,9 @@ public class AIMediumPlayer :  AIPlayer
     ///     ''' <param name="column">the column of the targets location</param>
     private void AddTarget(int row, int column)
     {
-        if (row >= 0 && column >= 0 && row < EnemyGrid.Height && column < EnemyGrid.Width && EnemyGrid.Item(row, column) == TileView.Sea)
-
+        if (row >= 0 && column >= 0 && row < EnemyGrid.Height && column < EnemyGrid.Width &&
+            EnemyGrid.Item(row, column) ==
+            TileView.Sea)
             _Targets.Push(new Location(row, column));
     }
 }

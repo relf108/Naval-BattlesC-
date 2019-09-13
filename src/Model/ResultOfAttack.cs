@@ -4,28 +4,32 @@ namespace BattleshipsC
     {
         /// <summary>
         ///     ''' The player hit something
-        ///     ''' </summary>
+        ///     '''
+        /// </summary>
         Hit,
 
         /// <summary>
         ///     ''' The player missed
-        ///     ''' </summary>
+        ///     '''
+        /// </summary>
         Miss,
 
         /// <summary>
         ///     ''' The player destroyed a ship
-        ///     ''' </summary>
+        ///     '''
+        /// </summary>
         Destroyed,
 
         /// <summary>
         ///     ''' That location was already shot.
-        ///     ''' </summary>
+        ///     '''
+        /// </summary>
         ShotAlready,
 
         /// <summary>
         ///     ''' The player killed all of the opponents ships
-        ///     ''' </summary>
+        ///     '''
+        /// </summary>
         GameOver
     }
-
 }

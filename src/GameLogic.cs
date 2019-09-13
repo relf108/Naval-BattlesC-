@@ -1,10 +1,7 @@
-﻿using System;
-using SwinGameSDK;
-
-public class GameLogic
+﻿public class GameLogic
 {
-	public static void Main()
-	{
+    public static void Main()
+    {
         //Opens a new Graphics Window
         SwinGame.OpenGraphicsWindow("Battle Ships", 800, 600);
 
@@ -24,6 +21,5 @@ public class GameLogic
 
         //Free Resources and Close Audio, to end the program.
         FreeResources();
-
     }
 }

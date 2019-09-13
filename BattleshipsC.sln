@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleshipsC", "BattleshipsC\BattleshipsC.csproj", "{85A65B70-C9BC-472C-9559-C94AB10FB9CF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BattleshipsC", "BattleshipsC.csproj", "{85A65B70-C9BC-472C-9559-C94AB10FB9CF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

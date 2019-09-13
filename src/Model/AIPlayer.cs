@@ -2,11 +2,11 @@
 /// ''' The AIPlayer is a type of player. It can readomly deploy ships, it also has the
 /// ''' functionality to generate coordinates and shoot at tiles
 /// ''' </summary>
-Using System;
+
+using System;
 
 public abstract class AIPlayer : Player
 {
-
     /// <summary>
     ///     ''' Location can store the location of the last hit made by an
     ///     ''' AI Player. The use of which determines the difficulty.
@@ -27,10 +27,7 @@ public abstract class AIPlayer : Player
             {
                 Return _Row;
             }
-            set
-            {
-                _Row = value;
-            }
+            set => _Row = value;
         }
 
         /// <summary>
@@ -40,14 +37,8 @@ public abstract class AIPlayer : Player
         ///         ''' <returns>The column of the shot</returns>
         public int Column
         {
-            get
-            {
-                return _Column;
-            }
-            set
-            {
-                _Column = value;
-            }
+            get => _Column;
+            set => _Column = value;
         }
 
         /// <summary>
@@ -84,7 +75,6 @@ public abstract class AIPlayer : Player
         }
     }
 
-
     public AIPlayer(BattleShipsGame game) : base(game)
     {
     }
@@ -112,22 +102,21 @@ public abstract class AIPlayer : Player
     public override AttackResult Attack()
     {
         AttackResult result;
-        int row = 0;
-        int column = 0;
-
+        var row = 0;
+        var column = 0;
         do
         {
             Delay();
             GenerateCoords(ref row, ref column);
             result = _game.Shoot(row, column);
             ProcessShot(row, column, result);
-        }
-        while (result.Value!= ResultOfAttack.Miss && result.Value!= ResultOfAttack.GameOver && !SwinGame.WindowCloseRequested) // generate coordinates For shot// take shot
-;
+        } while (result.Value != ResultOfAttack.Miss && result.Value != ResultOfAttack.GameOver &&
+                 !SwinGame.WindowCloseRequested
+            ) // generate coordinates For shot// take shot
+            ;
 
         return result;
     }
-
 
     /// <summary>
     ///     ''' Wait a short period to simulate the think time
@@ -137,10 +126,9 @@ public abstract class AIPlayer : Player
         int i;
         for (i = 0; i <= 150; i++)
         {
-            // Dont delay if window Is closed
+// Dont delay if window Is closed
             if (SwinGame.WindowCloseRequested)
-    return;
-
+                return;
             SwinGame.Delay(5);
             SwinGame.ProcessEvents();
             SwinGame.RefreshScreen();

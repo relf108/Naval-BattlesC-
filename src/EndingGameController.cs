@@ -1,39 +1,31 @@
-Using System;
-Using SwinGameSDK;
+using System;
+using SwinGameSDK;
 
 /// <summary>
-
 /// ''' The EndingGameController is responsible for managing the interactions at the end
-
 /// ''' of a game.
-
 /// ''' </summary>
-
-class EndingGameController
+internal class EndingGameController
 {
-
     /// <summary>
     ///     ''' Draw the end of the game screen, shows the win/lose state
     ///     ''' </summary>
     public static void DrawEndOfGame()
     {
         Rectangle toDraw;
-        String whatShouldIPrint;
-
+        string whatShouldIPrint;
         DrawField(ComputerPlayer.PlayerGrid, ComputerPlayer, true);
         DrawSmallField(HumanPlayer.PlayerGrid, HumanPlayer);
-
         toDraw.X = 0;
         toDraw.Y = 250;
         toDraw.Width = SwinGame.ScreenWidth();
         toDraw.Height = SwinGame.ScreenHeight();
-
         if (HumanPlayer.IsDestroyed)
             whatShouldIPrint = "YOU LOSE!";
         else
             whatShouldIPrint = "-- WINNER --";
-
-        SwinGame.DrawTextLines(whatShouldIPrint, Color.White, Color.Transparent, GameResources.GameFont("ArialLarge"), FontAlignment.AlignCenter, toDraw);
+        SwinGame.DrawTextLines(whatShouldIPrint, Color.White, Color.Transparent, GameResources.GameFont("ArialLarge"),
+            FontAlignment.AlignCenter, toDraw);
     }
 
     /// <summary>
@@ -42,11 +34,11 @@ class EndingGameController
     ///     ''' </summary>
     public static void HandleEndOfGameInput()
     {
-        if (SwinGame.MouseClicked(MouseButton.LeftButton) || SwinGame.KeyTyped(KeyCode.VK_RETURN) || SwinGame.KeyTyped(KeyCode.VK_ESCAPE))
+        if (SwinGame.MouseClicked(MouseButton.LeftButton) || SwinGame.KeyTyped(KeyCode.VK_RETURN) ||
+            SwinGame.KeyTyped(KeyCode.VK_ESCAPE))
         {
             ReadHighScore(HumanPlayer.Score);
             EndCurrentState();
         }
     }
 }
-

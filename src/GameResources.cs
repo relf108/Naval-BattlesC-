@@ -1,12 +1,21 @@
 ﻿using System;
-using SwinGameSDK;
 using System.Collections.Generic;
 
 public class GameResources
 {
-	public GameResources()
-	{
-	}
+    private Bitmap _Animation;
+
+    private Bitmap _Background;
+    private readonly Dictionary<string, Font> _Fonts = new Dictionary<string, Font>();
+
+    private readonly Dictionary<string, Bitmap> _Images = new Dictionary<string, Bitmap>();
+    private Bitmap _Loader;
+    private Bitmap _LoaderEmpty;
+    private Font _LoadingFont;
+    private readonly Dictionary<string, Music> _Music = new Dictionary<string, Music>();
+    private readonly Dictionary<string, SoundEffect> _Sounds = new Dictionary<string, SoundEffect>();
+    private SoundEffect _StartSound;
+
     private void LoadFonts()
     {
         NewFont("ArialLarge", "arial.ttf", 80);
@@ -14,6 +23,7 @@ public class GameResources
         NewFont("CourierSmall", "cour.ttf", 8);
         NewFont("Menu", "ffaccess.ttf", 8);
     }
+
     private void LoadImages()
     {
         //Backgrounds
@@ -92,18 +102,6 @@ public class GameResources
         return _Music(music);
     }
 
-    private Dictionary<string, Bitmap> _Images = new Dictionary<string, Bitmap>();
-    private Dictionary<string, Font> _Fonts = new Dictionary<string, Font>();
-    private Dictionary<string, SoundEffect> _Sounds = new Dictionary<string, SoundEffect>();
-    private Dictionary<string, Music> _Music = new Dictionary<string, Music>();
-
-    private Bitmap _Background;
-    private Bitmap _Animation;
-    private Bitmap _Loader;
-    private Bitmap _LoaderEmpty;
-    private Font _LoadingFont;
-    private SoundEffect _StartSound;
-
     // The Resources Class stores all of the Games Media Resources, such as Images, Fonts, Sounds, Music.
 
     public void LoadResources()
@@ -165,7 +163,7 @@ public class GameResources
 
         Audio.PlaySoundEffect(_StartSound);
         SwinGame.Delay(200);
-        
+
         int i;
         for (i = 0; i <= ANI_CELL_COUNT - 1; i++)
         {
@@ -177,18 +175,17 @@ public class GameResources
         }
 
         SwinGame.Delay(1500);
-
     }
 
     private void ShowMessage(string message, int number)
     {
         const int TX = 310;
-        int TY = 493;
-        int TW = 200;
-        int TH = 25;
-        int STEPS = 5;
-        int BG_X = 279;
-        int BG_Y = 453;
+        var TY = 493;
+        var TW = 200;
+        var TH = 25;
+        var STEPS = 5;
+        var BG_X = 279;
+        var BG_Y = 453;
         int fullW;
         Rectangle toDraw;
 
@@ -205,7 +202,8 @@ public class GameResources
         toDraw.Width = TW;
         toDraw.Height = TH;
 
-        SwinGame.DrawTextLines(message, Color.White, Color.Transparent, _LoadingFont, FontAlignment.AlignCenter, toDraw);
+        SwinGame.DrawTextLines(message, Color.White, Color.Transparent, _LoadingFont, FontAlignment.AlignCenter,
+            toDraw);
 
         // SwinGame.DrawTextLines(message, Color.White, Color.Transparent, _LoadingFont, FontAlignment.AlignCenter, TX, TY, TW, TH)
 
@@ -261,37 +259,25 @@ public class GameResources
     private void FreeFonts()
     {
         Font obj;
-        foreach (var obj in _Fonts.Values)
-        {
-            SwinGame.FreeFont(obj);
-        }
+        foreach (var obj in _Fonts.Values) SwinGame.FreeFont(obj);
     }
 
     private void FreeImages()
     {
         Bitmap obj;
-        foreach (var obj in _Images.Values)
-        {
-            SwinGame.FreeBitmap(obj);
-        }
+        foreach (var obj in _Images.Values) SwinGame.FreeBitmap(obj);
     }
 
     private void FreeSounds()
     {
         SoundEffect obj;
-        foreach (var obj in _Sounds.Values)
-        {
-            Audio.FreeSoundEffect(obj);
-        }
+        foreach (var obj in _Sounds.Values) Audio.FreeSoundEffect(obj);
     }
 
     private void FreeMusic()
     {
         Music obj;
-        foreach (var obj in _Music.Values)
-        {
-            Audio.FreeMusic(obj);
-        }
+        foreach (var obj in _Music.Values) Audio.FreeMusic(obj);
     }
 
     public void FreeResources()
