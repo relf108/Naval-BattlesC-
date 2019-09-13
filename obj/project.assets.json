@@ -686,23 +686,23 @@
     ]
   },
   "packageFolders": {
-    "/home/oem/.nuget/packages/": {},
-    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\jyest\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/oem/Naval-BattlesC-/BattleshipsC.csproj",
+      "projectUniqueName": "C:\\Users\\jyest\\Desktop\\Dev Proj 1\\Naval-BattlesC-\\BattleshipsC.csproj",
       "projectName": "BattleshipsC",
-      "projectPath": "/home/oem/Naval-BattlesC-/BattleshipsC.csproj",
-      "packagesPath": "/home/oem/.nuget/packages/",
-      "outputPath": "/home/oem/Naval-BattlesC-/obj/",
+      "projectPath": "C:\\Users\\jyest\\Desktop\\Dev Proj 1\\Naval-BattlesC-\\BattleshipsC.csproj",
+      "packagesPath": "C:\\Users\\jyest\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jyest\\Desktop\\Dev Proj 1\\Naval-BattlesC-\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/home/oem/.config/NuGet/NuGet.Config"
+        "C:\\Users\\jyest\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
