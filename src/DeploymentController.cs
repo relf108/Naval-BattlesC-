@@ -154,7 +154,7 @@ internal class DeploymentController
         foreach (ShipName sn in Enum.GetValues(TypeOf(ShipName)))
         {
             int i;
-            i = Int(sn) - 1;
+            i = (int)sn - 1;
             if (IsMouseInRectangle(SHIPS_LEFT, SHIPS_TOP + i * SHIPS_HEIGHT, SHIPS_WIDTH, SHIPS_HEIGHT)) { return sn; }
         }
 
