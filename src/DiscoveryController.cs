@@ -8,7 +8,7 @@ using SwinGameSDK;
 // ''' </summary>
 namespace Battleships
 {
-    internal class DiscoveryController
+    public class DiscoveryController
     {
         /// <summary>
         ///     ''' Handles input during the discovery phase of the game.
@@ -19,7 +19,7 @@ namespace Battleships
         ///     ''' </remarks>
         public static void HandleDiscoveryInput()
         {
-            if (SwinGame.KeyTyped(KeyCode.VK_ESCAPE))
+            if (SwinGame.KeyTyped(KeyCode.EscapeKey))
                 AddNewState(GameState.ViewingGameMenu);
             if (SwinGame.MouseClicked(MouseButton.LeftButton))
                 DoAttack();

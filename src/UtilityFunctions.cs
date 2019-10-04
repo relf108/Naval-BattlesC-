@@ -1,6 +1,9 @@
-﻿namespace Battleships
+﻿using System;
+using SwinGameSDK;
+
+namespace Battleships
 { 
-    public class UtilityFunctions
+    public static class UtilityFunctions
     {
         public const int FIELD_TOP = 122;
         public const int FIELD_LEFT = 349;
@@ -45,7 +48,7 @@
         // <param name="w">the width to check</param>
         // <param name="h">the height to check</param>
         // <returns>true if the mouse is in the area checked</returns>
-        public bool IsMouseInRectangle(int x, int y, int w, int h)
+        public static bool IsMouseInRectangle(int x, int y, int w, int h)
         {
             Point2D mouse;
             var result = false;
@@ -212,7 +215,7 @@
         // <summary>
         // Draws the message to the screen
         // </summary>
-        public void DrawMessage()
+        public static void DrawMessage()
         {
             SwinGame.DrawText(Message, MESSAGE_COLOR, GameFont("Courier"), FIELD_LEFT, MESSAGE_TOP);
         }

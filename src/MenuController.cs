@@ -236,7 +236,7 @@ namespace Battleships
         // </summary>
         // <param name="menu">the menu that has been clicked</param>
         // <param name="button">the index of the button that was clicked</param>
-        private vpod PerformMenuAction(int menu, int button)
+        private void PerformMenuAction(int menu, int button)
         {
             switch (menu)
             {

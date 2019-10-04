@@ -13,7 +13,7 @@ namespace Battleships
         private static BattleShipsGame _theGame;
         private static Player _human;
         private static AIPlayer _ai;
-        private static Stack<GameState> _state = New Stack<GameState>();
+        private static Stack<GameState> _state = new Stack<GameState>();
         private static AIOption _aiSetting;
 
         /// <summary>
