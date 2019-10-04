@@ -134,7 +134,7 @@ namespace BattleshipsC
             row = _Random.Next(0, EnemyGrid.Height);
             column = _Random.Next(0, EnemyGrid.Width);
             _CurrentTarget =
-                New Target(New Location(row,
+                new Target(new Location(row,
                 column), null /* TODO Change to default(_) if this Is Not a reference type */);
         }
 
@@ -149,27 +149,27 @@ namespace BattleshipsC
         {
             switch (result.Value)
             {
-                case object _ When ResultOfAttack.Miss:
+                case ResultOfAttack.Miss:
                 {
                     _CurrentTarget = null;
                     break;
                 }
 
-                case object _ When ResultOfAttack.Hit:
+                case ResultOfAttack.Hit:
                 {
                     ProcessHit(row, col);
                     break;
                 }
 
-                case object _ When ResultOfAttack.Destroyed:
+                case ResultOfAttack.Destroyed:
                 {
                     ProcessDestroy(row, col, result.Ship);
                     break;
                 }
 
-                case object _ When ResultOfAttack.ShotAlready:
+                case ResultOfAttack.ShotAlready:
                 {
-                    Throw New ApplicationException("Error in AI");
+                    throw new ApplicationException("Error in AI");
                     break;
                 }
             }

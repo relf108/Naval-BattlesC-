@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using SwinGameSDK;
 using System.Collections.Generic;
 
@@ -149,14 +150,14 @@ namespace MyGame
                 Message = "The AI " + result.ToString();
             switch (result.Value)
             {
-                case object _ When ResultOfAttack.Destroyed:
+                case ResultOfAttack.Destroyed:
                     {
                         PlayHitSequence(result.Row, result.Column, isHuman);
                         Audio.PlaySoundEffect(GameSound("Sink"));
                         break;
                     }
 
-                case object _ When ResultOfAttack.GameOver:
+                case ResultOfAttack.GameOver:
                     {
                         PlayHitSequence(result.Row, result.Column, isHuman);
                         Audio.PlaySoundEffect(GameSound("Sink"));
@@ -173,19 +174,19 @@ namespace MyGame
                         break;
                     }
 
-                case object _ When ResultOfAttack.Hit:
+                case ResultOfAttack.Hit:
                     {
                         PlayHitSequence(result.Row, result.Column, isHuman);
                         break;
                     }
 
-                case object _ When ResultOfAttack.Miss:
+                case ResultOfAttack.Miss:
                     {
                         PlayMissSequence(result.Row, result.Column, isHuman);
                         break;
                     }
 
-                case object _ When ResultOfAttack.ShotAlready:
+                case ResultOfAttack.ShotAlready:
                     {
                         Audio.PlaySoundEffect(GameSound("Error"));
                         break;
@@ -249,14 +250,14 @@ namespace MyGame
         {
             switch (result.Value)
             {
-                case object _ When ResultOfAttack.Miss:
+                case ResultOfAttack.Miss:
                     {
                         If(_theGame.Player == ComputerPlayer)
                     AIAttack();
                         break;
                     }
 
-                case object _ When ResultOfAttack.GameOver:
+                case ResultOfAttack.GameOver:
                     {
                         SwitchState(GameState.EndingGame);
                         break;
@@ -278,43 +279,43 @@ namespace MyGame
             SwinGame.ProcessEvents();
             switch (CurrentState)
             {
-                case object _ When GameState.ViewingMainMenu:
+                case GameState.ViewingMainMenu:
                     {
                         HandleMainMenuInput();
                         break;
                     }
 
-                case object _ When GameState.ViewingGameMenu:
+                case GameState.ViewingGameMenu:
                     {
                         HandleGameMenuInput();
                         break;
                     }
 
-                case object _ When GameState.AlteringSettings:
+                case GameState.AlteringSettings:
                     {
                         HandleSetupMenuInput();
                         break;
                     }
 
-                case object _ When GameState.Deploying:
+                case GameState.Deploying:
                     {
                         HandleDeploymentInput();
                         break;
                     }
 
-                case object _ When GameState.Discovering:
+                case GameState.Discovering:
                     {
                         HandleDiscoveryInput();
                         break;
                     }
 
-                case object _ When GameState.EndingGame:
+                case GameState.EndingGame:
                     {
                         HandleEndOfGameInput();
                         break;
                     }
 
-                case object _ When GameState.ViewingHighScores:
+                case GameState.ViewingHighScores:
                     {
                         HandleHighScoreInput();
                         break;
@@ -333,43 +334,43 @@ namespace MyGame
         public static void DrawScreen()
         {
             DrawBackground();
-            switch (CurrentState)
+            switch (CurrentState){
+            case GameState.ViewingMainMenu:
             {
-                Case Object _ When GameState.ViewingMainMenu:
-                {
                 DrawMainMenu();
                 break;
             }
-            Case Object _ When GameState.ViewingGameMenu:
-                {
+        
+            case GameState.ViewingGameMenu:
+            {
                 DrawGameMenu();
                 break;
             }
-            Case Object _ When GameState.AlteringSettings:
-                {
+            case GameState.AlteringSettings:
+            {
                 DrawSettings();
                 break;
             }
 
-            case object _ when GameState.Deploying:
+            case GameState.Deploying:
             {
                 DrawDeployment();
                 break;
             }
 
-            case object _ when GameState.Discovering:
+            case GameState.Discovering:
             {
                 DrawDiscovery();
                 break;
             }
 
-            case object _ when GameState.EndingGame:
+            case GameState.EndingGame:
             {
                 DrawEndOfGame();
                 break;
             }
 
-            case object _ when GameState.ViewingHighScores:
+            case GameState.ViewingHighScores:
             {
                 DrawHighScores();
                 break;

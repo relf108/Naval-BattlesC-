@@ -62,11 +62,7 @@ namespace MyGame
 
             return result;
         }
-
-        public bool IsMouseInRectangle(int x, int y, int w, int h)
-        {
-            // No code??
-        }
+        
 
         // <summary>
         // Draws a large field using the grid and the indicated player's ships.
@@ -130,8 +126,8 @@ namespace MyGame
                 for (var col = 0; col < 9; col++)
                 {
                     colLeft = left + (cellGap + cellWidth) * col;
-
-                    Color fillColor;
+                    // Had to initialize this var, Not sure what colout its meant to be
+                    Color fillColor = Color.Black;
                     var draw = true;
 
 
@@ -236,7 +232,7 @@ namespace MyGame
                 case GameState.Deploying:
                     SwinGame.DrawBitmap(GameImage("Deploy"), 0, 0);
                     break;
-                case default:
+                default:
                     SwinGame.ClearScreen();
                     break;
             }

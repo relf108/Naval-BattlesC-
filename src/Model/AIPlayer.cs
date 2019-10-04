@@ -4,6 +4,8 @@
 /// ''' </summary>
 
 using System;
+using BattleshipsC;
+using SwinGameSDK;
 
 public abstract class AIPlayer : Player
 {
@@ -25,7 +27,7 @@ public abstract class AIPlayer : Player
         {
             get
             {
-                Return _Row;
+                return _Row;
             }
             set => _Row = value;
         }
@@ -58,7 +60,7 @@ public abstract class AIPlayer : Player
         ///         ''' <param name="this">location 1</param>
         ///         ''' <param name="other">location 2</param>
         ///         ''' <returns>true if location 1 and location 2 are at the same spot</returns>
-        public static bool Operator ==(Location @this, Location other)
+        public static bool Operator(Location @this, Location other)
         {
             return @this != null && other != null && @this.Row == other.Row && @this.Column == other.Column;
         }
@@ -69,10 +71,10 @@ public abstract class AIPlayer : Player
         ///         ''' <param name="this">location 1</param>
         ///         ''' <param name="other">location 2</param>
         ///         ''' <returns>true if location 1 and location 2 are not at the same spot</returns>
-        public static bool Operator !=(Location @this, Location other)
+        /*public static bool Operator !=(Location @this, Location other)
         {
             return @this == null || other == null || @this.Row != other.Row || @this.Column != other.Column;
-        }
+        }*/
     }
 
     public AIPlayer(BattleShipsGame game) : base(game)
@@ -111,7 +113,7 @@ public abstract class AIPlayer : Player
             result = _game.Shoot(row, column);
             ProcessShot(row, column, result);
         } while (result.Value != ResultOfAttack.Miss && result.Value != ResultOfAttack.GameOver &&
-                 !SwinGame.WindowCloseRequested
+                 !SwinGame.WindowCloseRequested()
             ) // generate coordinates For shot// take shot
             ;
 
@@ -127,7 +129,7 @@ public abstract class AIPlayer : Player
         for (i = 0; i <= 150; i++)
         {
 // Dont delay if window Is closed
-            if (SwinGame.WindowCloseRequested)
+            if (SwinGame.WindowCloseRequested())
                 return;
             SwinGame.Delay(5);
             SwinGame.ProcessEvents();

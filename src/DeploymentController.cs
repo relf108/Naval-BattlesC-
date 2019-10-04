@@ -23,8 +23,8 @@ namespace MyGame
         private const int RANDOM_BUTTON_WIDTH = 51;
         private const int DIR_BUTTONS_WIDTH = 47;
         private const int TEXT_OFFSET = 5;
-        private Direction _currentDirection = Direction.UpDown;
-        private ShipName _selectedShip = ShipName.Tug;
+        private static Direction _currentDirection = Direction.UpDown;
+        private static ShipName _selectedShip = ShipName.Tug;
 
         /// <summary>
         ///     ''' Handles user input for the Deployment phase of the game.
@@ -151,7 +151,7 @@ namespace MyGame
         ///     ''' </summary>
         ///     ''' <returns>The ship selected or none</returns>
 
-        private ShipName GetShipMouseIsOver()
+        private static ShipName GetShipMouseIsOver()
         {
             foreach (ShipName sn in Enum.GetValues(TypeOf(ShipName)))
             {

@@ -67,12 +67,6 @@ namespace MyGame
         // <summary>
         // Handles the processing of user input when the main menu is showing
         // </summary>
-        public void HandleSetupMenuInput()
-        {
-            var handled = HandleMenuInput(SETUP_MENU, 1, 1);
-
-            if (handled == false) HandleMenuInput(MAIN_MENU, 0, 0);
-        }
 
         public void HandleSetupMenuInput()
         {
@@ -111,7 +105,7 @@ namespace MyGame
             if (SwinGame.MouseClicked(MouseButton.LeftButton))
             {
                 int i;
-                for (i = 0; i < _menuStructure(menu).Length - 1; i++)
+                for (i = 0; i < _menuStructure.Length - 1; i++)
                     // IsMouseOver the i'th button of the menu
                     if (IsMouseOverMenu(i, level, xOffset))
                     {
@@ -187,10 +181,10 @@ namespace MyGame
         private void DrawButtons(int menu, int level, int xOffset)
         {
             var btnTop = MENU_TOP - (MENU_GAP + BUTTON_HEIGHT) * level;
-            Rectangle toDraw;
+            Rectangle toDraw = new Rectangle();
 
             int i;
-            for (i = 0; i < _menuStructure(menu).Length - 1; i++)
+            for (i = 0; i < _menuStructure.Length - 1; i++)
             {
                 var btnLeft = MENU_LEFT + BUTTON_SEP * (i + xOffset);
 
@@ -202,7 +196,7 @@ namespace MyGame
 
                 toDraw.Height = BUTTON_HEIGHT;
 
-                SwinGame.DrawTextLines(_menuStructure(menu)(i), MENU_COLOR, Color.Black, GameFont("Menu"),
+                SwinGame.DrawTextLines(_menuStructure, MENU_COLOR, Color.Black, GameFont("Menu"),
                     FontAlignment.AlignCenter, toDraw);
 
                 if (SwinGame.MouseDown(MouseButton.LeftButton) && IsMouseOverMenu(i, level, xOffset))

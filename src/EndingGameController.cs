@@ -14,7 +14,7 @@ namespace MyGame
         ///     ''' </summary>
         public static void DrawEndOfGame()
         {
-            Rectangle toDraw;
+            Rectangle toDraw = new Rectangle() ;
             string whatShouldIPrint;
             DrawField(ComputerPlayer.PlayerGrid, ComputerPlayer, true);
             DrawSmallField(HumanPlayer.PlayerGrid, HumanPlayer);
