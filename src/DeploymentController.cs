@@ -1,12 +1,12 @@
 using System;
 using SwinGameSDK;
 
-namespace MyGame
+/// <summary>
+/// ''' The DeploymentController controls the players actions
+/// ''' during the deployment phase.
+/// ''' </summary>
+namespace Battleships
 {
-    /// <summary>
-    /// ''' The DeploymentController controls the players actions
-    /// ''' during the deployment phase.
-    /// ''' </summary>
     internal class DeploymentController
     {
         private const int SHIPS_TOP = 98;
@@ -23,8 +23,8 @@ namespace MyGame
         private const int RANDOM_BUTTON_WIDTH = 51;
         private const int DIR_BUTTONS_WIDTH = 47;
         private const int TEXT_OFFSET = 5;
-        private static Direction _currentDirection = Direction.UpDown;
-        private static ShipName _selectedShip = ShipName.Tug;
+        private Direction _currentDirection = Direction.UpDown;
+        private ShipName _selectedShip = ShipName.Tug;
 
         /// <summary>
         ///     ''' Handles user input for the Deployment phase of the game.
@@ -151,12 +151,12 @@ namespace MyGame
         ///     ''' </summary>
         ///     ''' <returns>The ship selected or none</returns>
 
-        private static ShipName GetShipMouseIsOver()
+        private ShipName GetShipMouseIsOver()
         {
             foreach (ShipName sn in Enum.GetValues(TypeOf(ShipName)))
             {
                 int i;
-                i = (int)sn - 1;
+                i = Int(sn) - 1;
                 if (IsMouseInRectangle(SHIPS_LEFT, SHIPS_TOP + i * SHIPS_HEIGHT, SHIPS_WIDTH, SHIPS_HEIGHT)) { return sn; }
             }
 

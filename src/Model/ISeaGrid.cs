@@ -1,6 +1,6 @@
 using System;
 
-namespace BattleshipsC
+namespace Battleships
 {
     /// <summary>
     ///     ''' The ISeaGrid defines the read only interface of a Grid. This

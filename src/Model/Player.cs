@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace BattleshipsC
+namespace Battleships
 {
     /// <summary>
     ///     ''' Player has its own _PlayerGrid, and can see an _EnemyGrid, it can also check if

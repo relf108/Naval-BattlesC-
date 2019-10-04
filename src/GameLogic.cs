@@ -1,7 +1,6 @@
-using System;
+﻿using System;
 using SwinGameSDK;
-
-namespace MyGame
+namespace Battleships
 {
     public class GameLogic
     {

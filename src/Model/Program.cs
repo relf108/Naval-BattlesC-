@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BattleshipsC
+namespace Battleships
 {
     internal class Program
     {

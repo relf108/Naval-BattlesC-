@@ -1,8 +1,5 @@
-﻿using System;
-using SwinGameSDK;
-
-namespace MyGame
-{
+﻿namespace Battleships
+{ 
     public class UtilityFunctions
     {
         public const int FIELD_TOP = 122;
@@ -62,7 +59,11 @@ namespace MyGame
 
             return result;
         }
-        
+
+        public bool IsMouseInRectangle(int x, int y, int w, int h)
+        {
+            // No code??
+        }
 
         // <summary>
         // Draws a large field using the grid and the indicated player's ships.
@@ -126,8 +127,8 @@ namespace MyGame
                 for (var col = 0; col < 9; col++)
                 {
                     colLeft = left + (cellGap + cellWidth) * col;
-                    // Had to initialize this var, Not sure what colout its meant to be
-                    Color fillColor = Color.Black;
+
+                    Color fillColor;
                     var draw = true;
 
 
@@ -223,7 +224,8 @@ namespace MyGame
         {
             switch (CurrentState)
             {
-                case (GameState.ViewingMainMenu, GameState.ViewingGameMenu, GameState.AlteringSettings, GameState.ViewingHighScores):
+                case (GameState.ViewingMainMenu, GameState.ViewingGameMenu, GameState.AlteringSettings, GameState
+                    .ViewingHighScores):
                     SwinGame.DrawBitmap(GameImage("Menu"), 0, 0);
                     break;
                 case (GameState.Discovering, GameState.EndingGame):
@@ -232,7 +234,7 @@ namespace MyGame
                 case GameState.Deploying:
                     SwinGame.DrawBitmap(GameImage("Deploy"), 0, 0);
                     break;
-                default:
+                case default:
                     SwinGame.ClearScreen();
                     break;
             }
