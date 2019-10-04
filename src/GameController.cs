@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using SwinGameSDK;
+using System.Collections.Generic;
 
 namespace MyGame
 {
@@ -9,7 +10,7 @@ namespace MyGame
     /// ''' managing user input, and displaying the current state of the
     /// ''' game.
     /// ''' </summary>
-    public static class GameController
+    public class GameController
     {
         private static BattleShipsGame _theGame;
         private static Player _human;
@@ -45,7 +46,7 @@ namespace MyGame
         {
             get { return _ai; }
         }
-         static GameController()
+        public GameController()
         {
             // bottom state will be quitting. If player exits main menu then the game Is over
             _state.Push(GameState.Quitting);
@@ -63,7 +64,9 @@ namespace MyGame
         public static void StartGame()
         {
             if (_theGame != null)
+            {
                 EndGame();
+            }
 
             // Create the game
             _theGame = new BattleShipsGame();
@@ -71,28 +74,21 @@ namespace MyGame
             // create the players
             switch (_aiSetting)
             {
-                case object _ when AIOption.Medium:
-                    {
-                        _ai = new AIMediumPlayer(_theGame);
-                        break;
-                    }
-
-                case object _ when AIOption.Hard:
-                    {
-                        _ai = new AIHardPlayer(_theGame);
-                        break;
-                    }
-
+                case (AIOption.Medium):
+                    _ai = new AIMediumPlayer(_theGame);
+                    break;
+                case (AIOption.Hard):
+                    _ai = new AIHardPlayer(_theGame);
+                    break;
                 default:
-                    {
-                        _ai = new AIHardPlayer(_theGame);
-                        break;
-                    }
+                    _ai = new AIHardPlayer(_theGame);
+                    break;
             }
 
             _human = new Player(_theGame);
 
             // AddHandler _human.PlayerGrid.Changed, AddressOf GridChanged
+            // WRONG
             _ai.PlayerGrid.Changed += GridChanged;
             _theGame.AttackCompleted += AttackCompleted;
             AddNewState(GameState.Deploying);
