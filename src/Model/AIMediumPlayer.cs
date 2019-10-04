@@ -56,7 +56,7 @@ public class AIMediumPlayer : AIPlayer
 
                 default:
                 {
-                    Throw New ApplicationException("AI has gone in an imvalid state");
+                    throw new ApplicationException("AI has gone in an imvalid state");
                     break;
                 }
             }
@@ -110,8 +110,8 @@ public class AIMediumPlayer : AIPlayer
             AddTarget(row, col + 1);
         }
 
-        elseif(result.Value == ResultOfAttack.ShotAlready)
-        Throw New ApplicationException("Error in AI");
+        else if(result.Value == ResultOfAttack.ShotAlready)
+        throw new ApplicationException("Error in AI");
     }
 
     /// <summary>
