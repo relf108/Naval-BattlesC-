@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace BattleshipsC
+namespace Battleships
 {
     /// <summary>
     ///     ''' A Ship has all the details about itself. For example the shipname,

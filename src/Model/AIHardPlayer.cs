@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace BattleshipsC
+namespace Battleships
 {
     public class AIHardPlayer : AIPlayer
     {
@@ -134,7 +134,7 @@ namespace BattleshipsC
             row = _Random.Next(0, EnemyGrid.Height);
             column = _Random.Next(0, EnemyGrid.Width);
             _CurrentTarget =
-                new Target(new Location(row,
+                New Target(New Location(row,
                 column), null /* TODO Change to default(_) if this Is Not a reference type */);
         }
 
@@ -149,27 +149,27 @@ namespace BattleshipsC
         {
             switch (result.Value)
             {
-                case ResultOfAttack.Miss:
+                case object _ When ResultOfAttack.Miss:
                 {
                     _CurrentTarget = null;
                     break;
                 }
 
-                case ResultOfAttack.Hit:
+                case object _ When ResultOfAttack.Hit:
                 {
                     ProcessHit(row, col);
                     break;
                 }
 
-                case ResultOfAttack.Destroyed:
+                case object _ When ResultOfAttack.Destroyed:
                 {
                     ProcessDestroy(row, col, result.Ship);
                     break;
                 }
 
-                case ResultOfAttack.ShotAlready:
+                case object _ When ResultOfAttack.ShotAlready:
                 {
-                    throw new ApplicationException("Error in AI");
+                    Throw New ApplicationException("Error in AI");
                     break;
                 }
             }

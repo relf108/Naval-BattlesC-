@@ -1,15 +1,11 @@
-﻿using System;
-using SwinGameSDK;
+﻿// <summary>
+// The menu controller handles the drawing and user interactions
+// from the menus in the game. These include the main menu, game
+// menu and the settings m,enu.
+// </summary>
 
-namespace MyGame
+namespace Battleships
 {
-
-    // <summary>
-    // The menu controller handles the drawing and user interactions
-    // from the menus in the game. These include the main menu, game
-    // menu and the settings m,enu.
-    // </summary>
-
     public class MenuController
     {
         private const int MENU_TOP = 575;
@@ -47,9 +43,9 @@ namespace MyGame
 
         private readonly string[][] _menuStructure =
         {
-        new[] {"PLAY", "SETUP", "SCORES", "QUIT"}, new[] {"RETURN", "SURRENDER", "QUIT"},
-        new[] {"EASY", "MEDIUM", "HARD"}
-    };
+            new[] {"PLAY", "SETUP", "SCORES", "QUIT"}, new[] {"RETURN", "SURRENDER", "QUIT"},
+            new[] {"EASY", "MEDIUM", "HARD"}
+        };
 
         private readonly Color HIGHLIGHT_COLOR = SwinGame.RGBAColor(1, 57, 86, 255);
 
@@ -67,6 +63,12 @@ namespace MyGame
         // <summary>
         // Handles the processing of user input when the main menu is showing
         // </summary>
+        public void HandleSetupMenuInput()
+        {
+            var handled = HandleMenuInput(SETUP_MENU, 1, 1);
+
+            if (handled == false) HandleMenuInput(MAIN_MENU, 0, 0);
+        }
 
         public void HandleSetupMenuInput()
         {
@@ -105,7 +107,7 @@ namespace MyGame
             if (SwinGame.MouseClicked(MouseButton.LeftButton))
             {
                 int i;
-                for (i = 0; i < _menuStructure.Length - 1; i++)
+                for (i = 0; i < _menuStructure(menu).Length - 1; i++)
                     // IsMouseOver the i'th button of the menu
                     if (IsMouseOverMenu(i, level, xOffset))
                     {
@@ -181,10 +183,10 @@ namespace MyGame
         private void DrawButtons(int menu, int level, int xOffset)
         {
             var btnTop = MENU_TOP - (MENU_GAP + BUTTON_HEIGHT) * level;
-            Rectangle toDraw = new Rectangle();
+            Rectangle toDraw;
 
             int i;
-            for (i = 0; i < _menuStructure.Length - 1; i++)
+            for (i = 0; i < _menuStructure(menu).Length - 1; i++)
             {
                 var btnLeft = MENU_LEFT + BUTTON_SEP * (i + xOffset);
 
@@ -196,7 +198,7 @@ namespace MyGame
 
                 toDraw.Height = BUTTON_HEIGHT;
 
-                SwinGame.DrawTextLines(_menuStructure, MENU_COLOR, Color.Black, GameFont("Menu"),
+                SwinGame.DrawTextLines(_menuStructure(menu)(i), MENU_COLOR, Color.Black, GameFont("Menu"),
                     FontAlignment.AlignCenter, toDraw);
 
                 if (SwinGame.MouseDown(MouseButton.LeftButton) && IsMouseOverMenu(i, level, xOffset))

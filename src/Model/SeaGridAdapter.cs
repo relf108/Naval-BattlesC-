@@ -1,6 +1,6 @@
 using System;
 
-namespace BattleshipsC
+namespace Battleships
 {
     /// <summary>
     ///     ''' The SeaGridAdapter allows for the change in a sea grid view. Whenever a ship is

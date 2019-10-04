@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using SwinGameSDK;
 
-namespace MyGame
+namespace Battleships
 {
     public class HighScoreController
     {
@@ -161,7 +159,7 @@ namespace MyGame
 
                 s.Name = SwinGame.TextReadAsASCII();
 
-                if (s.Name.Length < 3) s.Name = s.Name + new string(Convert.ToChar(" "), 3 - s.Name.Length);
+                if (s.Name.Length < 3) s.Name = s.Name & new string(Convert.ToChar(" "), 3 - s.Name.Length);
 
                 _Scores.RemoveAt(_Scores.Count - 1);
                 _Scores.Add(s);

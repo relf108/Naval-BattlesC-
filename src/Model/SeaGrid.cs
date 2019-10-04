@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace BattleshipsC
+namespace Battleships
 {
     /// <summary>
     ///     ''' The SeaGrid is the grid upon which the ships are deployed.

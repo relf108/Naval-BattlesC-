@@ -1,4 +1,4 @@
-namespace BattleshipsC
+namespace Battleships
 {
     public enum ShipName
     {
