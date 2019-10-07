@@ -1,4 +1,7 @@
-﻿// <summary>
+﻿using SwinGameSDK;
+using System;
+
+// <summary>
 // The menu controller handles the drawing and user interactions
 // from the menus in the game. These include the main menu, game
 // menu and the settings m,enu.
@@ -55,7 +58,7 @@ namespace Battleships
         // Handles the processing of user input when the main menu is showing
         // </summary>
 
-        public void HandleMainMenuInput()
+        public static void HandleMainMenuInput()
         {
             HandleMenuInput(MAIN_MENU, 0, 0);
         }
@@ -63,13 +66,6 @@ namespace Battleships
         // <summary>
         // Handles the processing of user input when the main menu is showing
         // </summary>
-        public void HandleSetupMenuInput()
-        {
-            var handled = HandleMenuInput(SETUP_MENU, 1, 1);
-
-            if (handled == false) HandleMenuInput(MAIN_MENU, 0, 0);
-        }
-
         public void HandleSetupMenuInput()
         {
             var handled = HandleMenuInput(SETUP_MENU, 1, 1);
@@ -96,7 +92,7 @@ namespace Battleships
         // <param name="xOffset">the xoffset of the menu</param>
         // <returns>false if a clicked missed the buttons. This can be used to check prior menus.</returns>
 
-        private bool HandleMenuInput(int menu, int level, int xOffset)
+        private static bool HandleMenuInput(int menu, int level, int xOffset)
         {
             if (SwinGame.KeyTyped(KeyCode.VK_ESCAPE))
             {
@@ -126,7 +122,7 @@ namespace Battleships
         // <summary>
         // Draws the main menu to the screen.
         // </summary>
-        public void DrawMainMenu()
+        public static void DrawMainMenu()
         {
             // Clears the Screen to Black
             // SwinGame.DrawText("Main Menu", Color.White, GameFont("ArialLarge"), 50, 50);
@@ -137,7 +133,7 @@ namespace Battleships
         // <summary>
         // Draws the Game menu to the screen
         /// </summary>
-        public void DrawGameMenu()
+        public static void DrawGameMenu()
         {
             // Clears the Screen to Black
             // SwinGame.DrawText("Paused", Color.White, GameFont("ArialLarge"), 50, 50)
@@ -151,7 +147,7 @@ namespace Battleships
         // <remarks>
         // Also shows the main menu
         // </remarks>
-        public void DrawSettings()
+        public static void DrawSettings()
         {
             // Clears the Screen to Black
             // SwinGame.DrawText("Settings", Color.White, GameFont("ArialLarge"), 50, 50)
@@ -164,7 +160,7 @@ namespace Battleships
         // Draw the buttons associated with a top level menu.
         // </summary>
         // <param name="menu">the index of the menu to draw</param>
-        private void DrawButtons(int menu)
+        private static void DrawButtons(int menu)
         {
             DrawButtons(menu, 0, 0);
         }
@@ -180,7 +176,7 @@ namespace Battleships
         // of the menu, to enable sub menus. The xOffset repositions the menu horizontally
         // to allow the submenus to be positioned correctly.
         // </remarks>
-        private void DrawButtons(int menu, int level, int xOffset)
+        private static void DrawButtons(int menu, int level, int xOffset)
         {
             var btnTop = MENU_TOP - (MENU_GAP + BUTTON_HEIGHT) * level;
             Rectangle toDraw;

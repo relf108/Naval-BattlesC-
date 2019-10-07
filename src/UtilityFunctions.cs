@@ -223,7 +223,7 @@ namespace Battleships
         // <summary>
         // Draws the background for the current state of the game
         // </summary>
-        public void DrawBackground()
+        public static void DrawBackground()
         {
             switch (CurrentState)
             {
