@@ -1,9 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
 using SwinGameSDK;
 
 namespace Battleships
 { 
-    public static class UtilityFunctions
+    public class UtilityFunctions
     {
         public const int FIELD_TOP = 122;
         public const int FIELD_LEFT = 349;
@@ -56,16 +57,14 @@ namespace Battleships
 
             // if the mouse is inline with the button horizontally
             if (mouse.X >= x && mouse.X <= x + w)
+            {
                 // Check vertical position
                 if (mouse.Y >= y && mouse.Y <= y + h)
+                {
                     result = true;
-
+                }
+            }
             return result;
-        }
-
-        public bool IsMouseInRectangle(int x, int y, int w, int h)
-        {
-            // No code??
         }
 
         // <summary>
@@ -143,21 +142,27 @@ namespace Battleships
                         // If small Then fillColor = _SMALL_SHIP Else fillColor = _LARGE_SHIP
                         case TileView.Miss:
                             if (small)
+                            {
                                 fillColor = SMALL_MISS;
+                            }
                             else
+                            {
                                 fillColor = LARGE_MISS;
+                            }
                             break;
                         case TileView.Hit:
                             if (small)
+                            {
                                 fillColor = SMALL_HIT;
+                            }
                             else
+                            {
                                 fillColor = LARGE_HIT;
+                            }
                             break;
-                        case (TileView.Sea, TileView.Ship):
-                            if (small)
-                                fillColor = SMALL_SEA;
-                            else
-                                draw = false;
+                        case (TileView.Sea) & (TileView.Ship):
+                            if (small) { fillColor = SMALL_SEA; }
+                            else { draw = false; }
                             break;
                     }
 
@@ -227,8 +232,7 @@ namespace Battleships
         {
             switch (CurrentState)
             {
-                case (GameState.ViewingMainMenu, GameState.ViewingGameMenu, GameState.AlteringSettings, GameState
-                    .ViewingHighScores):
+                case (GameState.ViewingMainMenu, GameState.ViewingGameMenu, GameState.AlteringSettings, GameState.ViewingHighScores):
                     SwinGame.DrawBitmap(GameImage("Menu"), 0, 0);
                     break;
                 case (GameState.Discovering, GameState.EndingGame):

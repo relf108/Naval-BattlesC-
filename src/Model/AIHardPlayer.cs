@@ -55,18 +55,19 @@ namespace Battleships
 
 
        private enum AIStates
-        {
+       {
             Searching,
             TargetingShip,
             HittingShip
-        }
+       }
 
         private AIStates _CurrentState = AIStates.Searching;
         private Stack<Target> _Targets = new Stack<Target>();
         private List<Target> _LastHit = new List<Target>();
         private Target _CurrentTarget;
 
-        public AIHardPlayer(BattleShipsGame game) : base(game)
+        public AIHardPlayer(BattleShipsGame game) 
+            : base(game)
         {
         }
 
@@ -82,8 +83,8 @@ namespace Battleships
             {
                 _CurrentTarget = null;
 
-// check which state the AI Is in And uppon that choose which coordinate generation
-// method will be used.
+                // check which state the AI Is in And uppon that choose which coordinate generation
+                // method will be used.
                 switch (_CurrentState)
                 {
                     case AIStates.Searching:
@@ -104,7 +105,7 @@ namespace Battleships
                         break;
                     }
                 }
-            } while (row < 0 || column < 0 || row >= EnemyGrid.Height || column >= EnemyGrid.Width ||
+            }   while (row < 0 || column < 0 || row >= EnemyGrid.Height || column >= EnemyGrid.Width ||
                      EnemyGrid.Item(row, column) !=
                      TileView.Sea); // while inside the grid And Not a sea tile do the search
         }

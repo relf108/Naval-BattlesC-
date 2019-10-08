@@ -39,7 +39,7 @@ namespace Battleships
             if (SwinGame.KeyTyped(KeyCode.EscapeKey)) { GameController.AddNewState(GameState.ViewingGameMenu); }
             if (SwinGame.KeyTyped(KeyCode.UpKey) || SwinGame.KeyTyped(KeyCode.DownKey)) { _currentDirection = Direction.UpDown; }
             if (SwinGame.KeyTyped(KeyCode.LeftKey) | SwinGame.KeyTyped(KeyCode.RightKey)) { _currentDirection = Direction.LeftRight; }
-            if (SwinGame.KeyTyped(KeyCode.RKey)) { HumanPlayer.RandomizeDeployment(); }
+            if (SwinGame.KeyTyped(KeyCode.RKey)) { GameController.HumanPlayer.RandomizeDeployment(); }
             if (SwinGame.MouseClicked(MouseButton.LeftButton))
             {
                 ShipName selected = GetShipMouseIsOver();
@@ -53,7 +53,7 @@ namespace Battleships
                     DoDeployClick();
                 }
 
-                if (HumanPlayer.ReadyToDeploy & UtilityFunctions.IsMouseInRectangle(PLAY_BUTTON_LEFT, TOP_BUTTONS_TOP, PLAY_BUTTON_WIDTH, TOP_BUTTONS_HEIGHT))
+                if (GameController.HumanPlayer.ReadyToDeploy & UtilityFunctions.IsMouseInRectangle(PLAY_BUTTON_LEFT, TOP_BUTTONS_TOP, PLAY_BUTTON_WIDTH, TOP_BUTTONS_HEIGHT))
                 {
                     EndDeployment();
                 }
@@ -67,7 +67,7 @@ namespace Battleships
                 }
                 else if (UtilityFunctions.IsMouseInRectangle(RANDOM_BUTTON_LEFT, TOP_BUTTONS_TOP, RANDOM_BUTTON_WIDTH, TOP_BUTTONS_HEIGHT))
                 {
-                    HumanPlayer.RandomizeDeployment();
+                    GameController.HumanPlayer.RandomizeDeployment();
                 }
             }
         }
@@ -87,14 +87,14 @@ namespace Battleships
             // Calculate the row/col clicked
             int row = Convert.ToInt32(Math.Floor(mouse.Y / (double)(CELL_HEIGHT + CELL_GAP)));
             int col = Convert.ToInt32(Math.Floor((mouse.X - FIELD_LEFT) / (double)(CELL_WIDTH + CELL_GAP)));
-            if ((row >= 0) & (row < HumanPlayer.PlayerGrid.Height))
+            if ((row >= 0) & (row < GameController.HumanPlayer.PlayerGrid.Height))
             {
-                if ((col >= 0) & (col < HumanPlayer.PlayerGrid.Width))
+                if ((col >= 0) & (col < GameController.HumanPlayer.PlayerGrid.Width))
                 {
                     // if in the area try to deploy
                     try
                     {
-                        HumanPlayer.PlayerGrid.MoveShip(row, col, _selectedShip, _currentDirection);
+                        GameController.HumanPlayer.PlayerGrid.MoveShip(row, col, _selectedShip, _currentDirection);
                     }
                     catch (Exception ex)
                     {
@@ -111,7 +111,7 @@ namespace Battleships
         ///     ''' </summary>
         public static void DrawDeployment()
         {
-            DrawField(HumanPlayer.PlayerGrid, HumanPlayer, true);
+            DrawField(GameController.HumanPlayer.PlayerGrid, GameController.HumanPlayer, true);
 
             // Draw the Left/Right And Up/Down buttons
             if (_currentDirection == Direction.LeftRight) { SwinGame.DrawBitmap(GameImage("LeftRightButton"), LEFT_RIGHT_BUTTON_LEFT, TOP_BUTTONS_TOP); }
@@ -137,7 +137,7 @@ namespace Battleships
                 }
             }
 
-            if (HumanPlayer.ReadyToDeploy)
+            if (GameController.HumanPlayer.ReadyToDeploy)
             {
                 SwinGame.DrawBitmap(GameImage("PlayButton"), PLAY_BUTTON_LEFT, TOP_BUTTONS_TOP);
             }

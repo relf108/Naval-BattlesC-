@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using SwinGameSDK;
+
 namespace Battleships
 {
     public class GameResources
@@ -12,6 +13,7 @@ namespace Battleships
 
         private readonly Dictionary<string, Bitmap> _Images = new Dictionary<string, Bitmap>();
         private Bitmap _Loader;
+        private Bitmap _LoaderFull;
         private Bitmap _LoaderEmpty;
         private Font _LoadingFont;
         private readonly Dictionary<string, Music> _Music = new Dictionary<string, Music>();
@@ -41,11 +43,10 @@ namespace Battleships
             NewImage("RandomButton", "deploy_randomize_button.png");
 
             //Ships
-            Int i;
-            for (i = 1; i < 5; i++)
+            for (int i = 1; i < 5; i++)
             {
-                NewImage("ShipLR" & i, "ship_deploy_horiz_" & i & ".png");
-                NewImage("ShipUD" & i, "ship_deploy_vert_" & i & ".png");
+                NewImage("ShipLR" + i, "ship_deploy_horiz_" + i + ".png");
+                NewImage("ShipUD" + i, "ship_deploy_vert_" + i + ".png");
             }
 
             //Explosions
@@ -75,7 +76,7 @@ namespace Battleships
 
         public Font GameFont(string font)
         {
-            return _Fonts(font);
+            return _Fonts[font];
         }
 
         // Gets an Image loaded in the Resources
@@ -84,7 +85,7 @@ namespace Battleships
 
         public Bitmap GameImage(string image)
         {
-            return _Images(image);
+            return _Images[image];
         }
 
         // Gets an sound loaded in the Resources
@@ -92,16 +93,16 @@ namespace Battleships
         // <returns>The sound with this name</returns>
         public SoundEffect GameSound(string sound)
         {
-            return _Sounds(sound);
+            return _Sounds[sound];
         }
 
         // Gets the music loaded in the Resources
         // <param name="music">Name of music</param>
         // <returns>The music with this name</returns>
 
-        public Music GameMusic()
+        public Music GameMusic(string music)
         {
-            return _Music(music);
+            return _Music[music];
         }
 
         // The Resources Class stores all of the Games Media Resources, such as Images, Fonts, Sounds, Music.
@@ -189,7 +190,7 @@ namespace Battleships
             var BG_X = 279;
             var BG_Y = 453;
             int fullW;
-            Rectangle toDraw;
+            Rectangle toDraw = new Rectangle();
 
             fullW = 260 * number / STEPS;
             SwinGame.DrawBitmap(_LoaderEmpty, BG_X, BG_Y);
@@ -204,9 +205,7 @@ namespace Battleships
             toDraw.Width = TW;
             toDraw.Height = TH;
 
-            SwinGame.DrawTextLines(message, Color.White, Color.Transparent, _LoadingFont, FontAlignment.AlignCenter,
-                toDraw);
-
+            SwinGame.DrawTextLines(message, Color.White, Color.Transparent, _LoadingFont, FontAlignment.AlignCenter, toDraw);
             // SwinGame.DrawTextLines(message, Color.White, Color.Transparent, _LoadingFont, FontAlignment.AlignCenter, TX, TY, TW, TH)
 
             SwinGame.RefreshScreen();
@@ -238,9 +237,9 @@ namespace Battleships
             _Images.Add(imageName, SwinGame.LoadBitmap(SwinGame.PathToResource(fileName, ResourceKind.BitmapResource)));
         }
 
-        private void NewTransparentColorImage(string imageName, string fileName, ConsoleColor transColor)
+        private void NewTransparentColorImage(string imageName, string fileName, Color transColor)
         {
-            _Images.Add(imageName, SwinGame.LoadBitmap(SwinGame.PathToResource(fileName, ResourceKind.BitmapResource)))
+            _Images.Add(imageName, SwinGame.LoadBitmap(SwinGame.PathToResource(fileName, ResourceKind.BitmapResource)));
         }
 
         private void NewTransparentColourImage(string imageName, string fileName, Color transColor)
@@ -250,7 +249,7 @@ namespace Battleships
 
         private void NewSound(string soundName, string fileName)
         {
-            _Sounds.Add(soundName, Audio.LoadSoundEffect(SwinGame.PathToResource(fileName, ResourceKind.SoundResource)))
+            _Sounds.Add(soundName, Audio.LoadSoundEffect(SwinGame.PathToResource(fileName, ResourceKind.SoundResource)));
         }
 
         private void NewMusic(string musicName, string fileName)
@@ -260,26 +259,34 @@ namespace Battleships
 
         private void FreeFonts()
         {
-            Font obj;
-            foreach (var obj in _Fonts.Values) SwinGame.FreeFont(obj);
+            foreach (Font obj in _Fonts.Values)
+            {
+                SwinGame.FreeFont(obj);
+            }
         }
 
         private void FreeImages()
         {
-            Bitmap obj;
-            foreach (var obj in _Images.Values) SwinGame.FreeBitmap(obj);
+            foreach (Bitmap obj in _Images.Values)
+            {
+                SwinGame.FreeBitmap(obj);
+            }
         }
 
         private void FreeSounds()
         {
-            SoundEffect obj;
-            foreach (var obj in _Sounds.Values) Audio.FreeSoundEffect(obj);
+            foreach (SoundEffect obj in _Sounds.Values)
+            {
+                Audio.FreeSoundEffect(obj);
+            }
         }
 
         private void FreeMusic()
         {
-            Music obj;
-            foreach (var obj in _Music.Values) Audio.FreeMusic(obj);
+            foreach (Music obj in _Music.Values)
+            {
+                Audio.FreeMusic(obj);
+            }
         }
 
         public void FreeResources()
