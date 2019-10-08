@@ -1,4 +1,8 @@
-﻿namespace Battleships
+﻿using System;
+using System.Collections.Generic;
+using SwinGameSDK;
+
+namespace Battleships
 { 
     public class UtilityFunctions
     {
@@ -45,7 +49,7 @@
         // <param name="w">the width to check</param>
         // <param name="h">the height to check</param>
         // <returns>true if the mouse is in the area checked</returns>
-        public bool IsMouseInRectangle(int x, int y, int w, int h)
+        public static bool IsMouseInRectangle(int x, int y, int w, int h)
         {
             Point2D mouse;
             var result = false;
@@ -53,16 +57,14 @@
 
             // if the mouse is inline with the button horizontally
             if (mouse.X >= x && mouse.X <= x + w)
+            {
                 // Check vertical position
                 if (mouse.Y >= y && mouse.Y <= y + h)
+                {
                     result = true;
-
+                }
+            }
             return result;
-        }
-
-        public bool IsMouseInRectangle(int x, int y, int w, int h)
-        {
-            // No code??
         }
 
         // <summary>
@@ -140,21 +142,27 @@
                         // If small Then fillColor = _SMALL_SHIP Else fillColor = _LARGE_SHIP
                         case TileView.Miss:
                             if (small)
+                            {
                                 fillColor = SMALL_MISS;
+                            }
                             else
+                            {
                                 fillColor = LARGE_MISS;
+                            }
                             break;
                         case TileView.Hit:
                             if (small)
+                            {
                                 fillColor = SMALL_HIT;
+                            }
                             else
+                            {
                                 fillColor = LARGE_HIT;
+                            }
                             break;
-                        case (TileView.Sea, TileView.Ship):
-                            if (small)
-                                fillColor = SMALL_SEA;
-                            else
-                                draw = false;
+                        case (TileView.Sea) & (TileView.Ship):
+                            if (small) { fillColor = SMALL_SEA; }
+                            else { draw = false; }
                             break;
                     }
 
@@ -212,7 +220,7 @@
         // <summary>
         // Draws the message to the screen
         // </summary>
-        public void DrawMessage()
+        public static void DrawMessage()
         {
             SwinGame.DrawText(Message, MESSAGE_COLOR, GameFont("Courier"), FIELD_LEFT, MESSAGE_TOP);
         }
@@ -220,12 +228,11 @@
         // <summary>
         // Draws the background for the current state of the game
         // </summary>
-        public void DrawBackground()
+        public static void DrawBackground()
         {
             switch (CurrentState)
             {
-                case (GameState.ViewingMainMenu, GameState.ViewingGameMenu, GameState.AlteringSettings, GameState
-                    .ViewingHighScores):
+                case (GameState.ViewingMainMenu, GameState.ViewingGameMenu, GameState.AlteringSettings, GameState.ViewingHighScores):
                     SwinGame.DrawBitmap(GameImage("Menu"), 0, 0);
                     break;
                 case (GameState.Discovering, GameState.EndingGame):

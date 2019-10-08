@@ -12,34 +12,36 @@ namespace Battleships
         /// <summary>
         ///     ''' Draw the end of the game screen, shows the win/lose state
         ///     ''' </summary>
-        public static void DrawEndOfGame()
+        public void DrawEndOfGame()
         {
-            Rectangle toDraw;
+            Rectangle toDraw = new Rectangle();
             string whatShouldIPrint;
             DrawField(ComputerPlayer.PlayerGrid, ComputerPlayer, true);
-            DrawSmallField(HumanPlayer.PlayerGrid, HumanPlayer);
+            DrawSmallField(GameController.HumanPlayer.PlayerGrid, GameController.HumanPlayer);
             toDraw.X = 0;
             toDraw.Y = 250;
             toDraw.Width = SwinGame.ScreenWidth();
             toDraw.Height = SwinGame.ScreenHeight();
-            if (HumanPlayer.IsDestroyed)
+            if (GameController.HumanPlayer.IsDestroyed)
+            {
                 whatShouldIPrint = "YOU LOSE!";
+            }
             else
+            {
                 whatShouldIPrint = "-- WINNER --";
-            SwinGame.DrawTextLines(whatShouldIPrint, Color.White, Color.Transparent, GameResources.GameFont("ArialLarge"),
-                FontAlignment.AlignCenter, toDraw);
+            }
+            SwinGame.DrawTextLines(whatShouldIPrint, Color.White, Color.Transparent, GameResources.GameFont("ArialLarge"), FontAlignment.AlignCenter, toDraw);
         }
 
         /// <summary>
         ///     ''' Handle the input during the end of the game. Any interaction
         ///     ''' will result in it reading in the highsSwinGame.
         ///     ''' </summary>
-        public static void HandleEndOfGameInput()
+        public void HandleEndOfGameInput()
         {
-            if (SwinGame.MouseClicked(MouseButton.LeftButton) || SwinGame.KeyTyped(KeyCode.VK_RETURN) ||
-                SwinGame.KeyTyped(KeyCode.VK_ESCAPE))
+            if (SwinGame.MouseClicked(MouseButton.LeftButton) || SwinGame.KeyTyped(KeyCode.ReturnKey) || SwinGame.KeyTyped(KeyCode.EscapeKey))
             {
-                ReadHighScore(HumanPlayer.Score);
+                ReadHighScore(GameController.HumanPlayer.Score);
                 EndCurrentState();
             }
         }

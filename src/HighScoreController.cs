@@ -3,7 +3,7 @@ using System.IO;
 
 namespace Battleships
 {
-    public class HighScoreController
+    public static class HighScoreController
     {
         private const int NAME_WIDTH = 3;
         private const int SCORES_LEFT = 490;
@@ -83,7 +83,7 @@ namespace Battleships
         // Draws the high scores to the screen.
         // </summary>
 
-        public void DrawHighScores()
+        public static void DrawHighScores()
         {
             const int SCORES_HEADING = 40;
             const int SCORES_TOP = 80;
