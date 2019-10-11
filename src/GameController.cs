@@ -359,7 +359,7 @@ namespace Battleships
         /// <summary>
         ///     ''' Ends the current state, returning to the prior state
         ///     ''' </summary>
-        public void EndCurrentState()
+        public static void EndCurrentState()
         {
             _state.Pop();
         }

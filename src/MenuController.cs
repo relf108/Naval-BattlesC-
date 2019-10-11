@@ -44,11 +44,11 @@ namespace Battleships
         // These are the text captions for the menu items.
         // </remarks>
 
-        private readonly string[][] _menuStructure =
+        private string[][] _menuStructure = new string[][] { new string[] { "PLAY", "SETUP", "SCORES", "QUIT" }, new string[] { "RETURN", "SURRENDER", "QUIT" }, new string[] { "EASY", "MEDIUM", "HARD" } };
+        public string[][] MenuStructure
         {
-            new[] {"PLAY", "SETUP", "SCORES", "QUIT"}, new[] {"RETURN", "SURRENDER", "QUIT"},
-            new[] {"EASY", "MEDIUM", "HARD"}
-        };
+            get { return _menuStructure; }
+        }
 
         private readonly Color HIGHLIGHT_COLOR = SwinGame.RGBAColor(1, 57, 86, 255);
 
@@ -58,7 +58,7 @@ namespace Battleships
         // Handles the processing of user input when the main menu is showing
         // </summary>
 
-        public static void HandleMainMenuInput()
+        public void HandleMainMenuInput()
         {
             HandleMenuInput(MAIN_MENU, 0, 0);
         }
@@ -92,18 +92,18 @@ namespace Battleships
         // <param name="xOffset">the xoffset of the menu</param>
         // <returns>false if a clicked missed the buttons. This can be used to check prior menus.</returns>
 
-        private static bool HandleMenuInput(int menu, int level, int xOffset)
+        public bool HandleMenuInput(int menu, int level, int xOffset)
         {
-            if (SwinGame.KeyTyped(KeyCode.VK_ESCAPE))
+            if (SwinGame.KeyTyped(KeyCode.EscapeKey))
             {
-                EndCurrentState();
+                GameController.EndCurrentState();
                 return true;
             }
 
             if (SwinGame.MouseClicked(MouseButton.LeftButton))
             {
                 int i;
-                for (i = 0; i < _menuStructure(menu).Length - 1; i++)
+                for (i = 0; i < MenuStructure[menu].Length - 1; i++)
                     // IsMouseOver the i'th button of the menu
                     if (IsMouseOverMenu(i, level, xOffset))
                     {
@@ -113,7 +113,7 @@ namespace Battleships
 
                 if (level > 0)
                     // none clicked - so end this sub menu
-                    EndCurrentState();
+                    GameController.EndCurrentState();
             }
 
             return false;
@@ -122,7 +122,7 @@ namespace Battleships
         // <summary>
         // Draws the main menu to the screen.
         // </summary>
-        public static void DrawMainMenu()
+        public void DrawMainMenu()
         {
             // Clears the Screen to Black
             // SwinGame.DrawText("Main Menu", Color.White, GameFont("ArialLarge"), 50, 50);
@@ -133,7 +133,7 @@ namespace Battleships
         // <summary>
         // Draws the Game menu to the screen
         /// </summary>
-        public static void DrawGameMenu()
+        public void DrawGameMenu()
         {
             // Clears the Screen to Black
             // SwinGame.DrawText("Paused", Color.White, GameFont("ArialLarge"), 50, 50)
@@ -147,7 +147,7 @@ namespace Battleships
         // <remarks>
         // Also shows the main menu
         // </remarks>
-        public static void DrawSettings()
+        public void DrawSettings()
         {
             // Clears the Screen to Black
             // SwinGame.DrawText("Settings", Color.White, GameFont("ArialLarge"), 50, 50)
@@ -160,7 +160,7 @@ namespace Battleships
         // Draw the buttons associated with a top level menu.
         // </summary>
         // <param name="menu">the index of the menu to draw</param>
-        private static void DrawButtons(int menu)
+        private void DrawButtons(int menu)
         {
             DrawButtons(menu, 0, 0);
         }
@@ -176,13 +176,13 @@ namespace Battleships
         // of the menu, to enable sub menus. The xOffset repositions the menu horizontally
         // to allow the submenus to be positioned correctly.
         // </remarks>
-        private static void DrawButtons(int menu, int level, int xOffset)
+        public void DrawButtons(int menu, int level, int xOffset)
         {
             var btnTop = MENU_TOP - (MENU_GAP + BUTTON_HEIGHT) * level;
-            Rectangle toDraw;
+            Rectangle toDraw = new Rectangle();
 
             int i;
-            for (i = 0; i < _menuStructure(menu).Length - 1; i++)
+            for (i = 0; i < MenuStructure[menu].Length - 1; i++)
             {
                 var btnLeft = MENU_LEFT + BUTTON_SEP * (i + xOffset);
 
@@ -194,7 +194,7 @@ namespace Battleships
 
                 toDraw.Height = BUTTON_HEIGHT;
 
-                SwinGame.DrawTextLines(_menuStructure(menu)(i), MENU_COLOR, Color.Black, GameFont("Menu"),
+                SwinGame.DrawTextLines(MenuStructure[menu][i], MENU_COLOR, Color.Black, GameFont("Menu"),
                     FontAlignment.AlignCenter, toDraw);
 
                 if (SwinGame.MouseDown(MouseButton.LeftButton) && IsMouseOverMenu(i, level, xOffset))
@@ -224,7 +224,7 @@ namespace Battleships
             var btnTop = MENU_TOP - (MENU_GAP + BUTTON_HEIGHT) * level;
             var btnLeft = MENU_LEFT + BUTTON_SEP * (button + xOffset);
 
-            return IsMouseInRectangle(btnLeft, btnTop, BUTTON_WIDTH, BUTTON_HEIGHT);
+            return UtilityFunctions.IsMouseInRectangle(btnLeft, btnTop, BUTTON_WIDTH, BUTTON_HEIGHT);
         }
 
         // <summary>
@@ -260,13 +260,13 @@ namespace Battleships
                     StartGame();
                     break;
                 case MAIN_MENU_SETUP_BUTTON:
-                    AddNewState(GameState.AlteringSettings);
+                    GameController.AddNewState(GameState.AlteringSettings);
                     break;
                 case MAIN_MENU_TOP_SCORES_BUTTON:
-                    AddNewState(GameState.ViewingHighScores);
+                    GameController.AddNewState(GameState.ViewingHighScores);
                     break;
                 case MAIN_MENU_QUIT_BUTTON:
-                    EndCurrentState();
+                    GameController.EndCurrentState();
                     break;
             }
         }
@@ -291,7 +291,7 @@ namespace Battleships
             }
 
             // Always end state - handles exit button as well
-            EndCurrentState();
+            GameController.EndCurrentState();
         }
 
         // <summary>
@@ -303,14 +303,14 @@ namespace Battleships
             switch (button)
             {
                 case GAME_MENU_RETURN_BUTTON:
-                    EndCurrentState();
+                    GameController.EndCurrentState();
                     break;
                 case GAME_MENU_SURRENDER_BUTTON:
-                    EndCurrentState(); // end game menu
-                    EndCurrentState(); // end game
+                    GameController.EndCurrentState(); // end game menu
+                    GameController.EndCurrentState(); // end game
                     break;
                 case GAME_MENU_QUIT_BUTTON:
-                    AddNewState(GameState.Quitting);
+                    GameController.AddNewState(GameState.Quitting);
                     break;
             }
         }

@@ -130,7 +130,7 @@ namespace Battleships
                 {
                     colLeft = left + (cellGap + cellWidth) * col;
 
-                    Color fillColor;
+                    Color fillColor = new Color();
                     var draw = true;
 
 
@@ -232,16 +232,20 @@ namespace Battleships
         {
             switch (CurrentState)
             {
-                case (GameState.ViewingMainMenu, GameState.ViewingGameMenu, GameState.AlteringSettings, GameState.ViewingHighScores):
+                case GameState.ViewingMainMenu:
+                case GameState.ViewingGameMenu:
+                case GameState.AlteringSettings:
+                case GameState.ViewingHighScores:
                     SwinGame.DrawBitmap(GameImage("Menu"), 0, 0);
                     break;
-                case (GameState.Discovering, GameState.EndingGame):
+                case GameState.Discovering:
+                case GameState.EndingGame:
                     SwinGame.DrawBitmap(GameImage("Discovery"), 0, 0);
                     break;
                 case GameState.Deploying:
                     SwinGame.DrawBitmap(GameImage("Deploy"), 0, 0);
                     break;
-                case default:
+                case null:
                     SwinGame.ClearScreen();
                     break;
             }
