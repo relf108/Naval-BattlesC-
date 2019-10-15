@@ -57,15 +57,15 @@ namespace Battleships
             const int SPLASH_TOP = 256;
             if ((SwinGame.KeyDown(KeyCode.LeftShiftKey) | SwinGame.KeyDown(KeyCode.RightShiftKey)) & SwinGame.KeyDown(KeyCode.CKey))
             {
-                DrawField(GameController.HumanPlayer.EnemyGrid, ComputerPlayer, true);
+                UtilityFunctions.DrawField(GameController.HumanPlayer.EnemyGrid, ComputerPlayer, true);
             }
             else
             {
-                DrawField(GameController.HumanPlayer.EnemyGrid, ComputerPlayer, false);
+                UtilityFunctions.DrawField(GameController.HumanPlayer.EnemyGrid, ComputerPlayer, false);
             }
 
-            DrawSmallField(GameController.HumanPlayer.PlayerGrid, GameController.HumanPlayer);
-            DrawMessage();
+            UtilityFunctions.DrawSmallField(GameController.HumanPlayer.PlayerGrid, GameController.HumanPlayer);
+            UtilityFunctions.DrawMessage();
             SwinGame.DrawText(GameController.HumanPlayer.Shots.ToString(), Color.White, GameFont("Menu"), SCORES_LEFT, SHOTS_TOP);
             SwinGame.DrawText(GameController.HumanPlayer.Hits.ToString(), Color.White, GameFont("Menu"), SCORES_LEFT, HITS_TOP);
             SwinGame.DrawText(GameController.HumanPlayer.Missed.ToString(), Color.White, GameFont("Menu"), SCORES_LEFT, SPLASH_TOP);

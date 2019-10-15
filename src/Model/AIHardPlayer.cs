@@ -92,22 +92,19 @@ namespace Battleships
                         SearchCoords(ref row, ref column);
                         break;
                     }
-
                     case AIStates.TargetingShip:
                     case AIStates.HittingShip:
                     {
                         TargetCoords(ref row, ref column);
                         break;
                     }
-
                     default:
-                    {   new ApplicationException("AI has gone in an invalid state");
+                    {
+                        new ApplicationException("AI has gone in an invalid state");
                         break;
                     }
                 }
-            }   while (row < 0 || column < 0 || row >= EnemyGrid.Height || column >= EnemyGrid.Width ||
-                     EnemyGrid.Item(row, column) !=
-                     TileView.Sea); // while inside the grid And Not a sea tile do the search
+            } while (row < 0 || column < 0 || row >= EnemyGrid.Height || column >= EnemyGrid.Width || EnemyGrid.Item(row, column) != TileView.Sea); // while inside the grid And Not a sea tile do the search
         }
 
         /// <summary>
@@ -134,9 +131,7 @@ namespace Battleships
         {
             row = _Random.Next(0, EnemyGrid.Height);
             column = _Random.Next(0, EnemyGrid.Width);
-            _CurrentTarget =
-                New Target(New Location(row,
-                column), null /* TODO Change to default(_) if this Is Not a reference type */);
+            _CurrentTarget = new Target(New Location(row, column), null /* TODO Change to default(_) if this Is Not a reference type */);
         }
 
         /// <summary>
@@ -150,28 +145,24 @@ namespace Battleships
         {
             switch (result.Value)
             {
-                case object _ When ResultOfAttack.Miss:
+                case ResultOfAttack.Miss:
                 {
                     _CurrentTarget = null;
                     break;
                 }
-
-                case object _ When ResultOfAttack.Hit:
+                case ResultOfAttack.Hit:
                 {
                     ProcessHit(row, col);
                     break;
                 }
-
-                case object _ When ResultOfAttack.Destroyed:
+                case ResultOfAttack.Destroyed:
                 {
                     ProcessDestroy(row, col, result.Ship);
                     break;
                 }
-
-                case object _ When ResultOfAttack.ShotAlready:
+                case ResultOfAttack.ShotAlready:
                 {
-                    Throw New ApplicationException("Error in AI");
-                    break;
+                    throw new ApplicationException("Error in AI");
                 }
             }
 
@@ -194,16 +185,16 @@ namespace Battleships
             current = _CurrentTarget;
             foundOriginal = false;
 
-// i = 1, as we dont have targets from the current hit...
+            // i = 1, as we dont have targets from the current hit...
             int i;
             for (i = 1; i <= ship.Hits - 1; i++)
             {
                 if (!foundOriginal)
                 {
                     source = current.Source;
-// Source Is nnothing if the ship was originally hit in
-// the middle. This then searched forward, rather than
-// backward through the list of targets
+                    // Source Is nnothing if the ship was originally hit in
+                    // the middle. This then searched forward, rather than
+                    // backward through the list of targets
                     if (source == null)
                     {
                         source = current.ShotAt;
@@ -215,15 +206,16 @@ namespace Battleships
                     source = current.ShotAt;
                 }
 
-// find the source in _LastHit
+                // find the source in _LastHit
                 foreach (Target t in _LastHit)
+                {
                     if (!foundOriginal && t.ShotAt == source || foundOriginal & (t.Source == source))
                     {
                         current = t;
                         _LastHit.Remove(t);
                         break;
                     }
-
+                }
                 RemoveShotsAround(current.ShotAt);
             }
         }
@@ -239,20 +231,23 @@ namespace Battleships
         {
             Stack<Target> newStack = new Stack<Target>(); // create a New stack
 
-// check all targets in the _Targets stack
+            // check all targets in the _Targets stack
             foreach (Target t in _Targets)
-// if the source of the target does Not belong to the destroyed ship put them on the newStack
-                if (t.Source != toRemove)
-                    newStack.Push(t);
+            {
+                // if the source of the target does Not belong to the destroyed ship put them on the newStack
+                if (t.Source != toRemove) { newStack.Push(t); }
+            }
+            
+                
             _Targets.Clear(); // clear the _Targets stack
 
-// for all the targets in the newStack, move them back onto the _Targets stack
+            // for all the targets in the newStack, move them back onto the _Targets stack
             foreach (Target t in newStack)
+            {
                 _Targets.Push(t);
-
-// if the _Targets stack Is 0 then change the AI's state back to searching
-            if (_Targets.Count == 0)
-                _CurrentState = AIStates.Searching;
+            }
+            // if the _Targets stack Is 0 then change the AI's state back to searching
+            if (_Targets.Count == 0) { _CurrentState = AIStates.Searching; }
         }
 
         /// <summary>
@@ -268,7 +263,7 @@ namespace Battleships
         {
             _LastHit.Add(_CurrentTarget);
 
-// Uses _CurrentTarget as the source
+            // Uses _CurrentTarget as the source
             AddTarget(row - 1, col);
             AddTarget(row, col - 1);
             AddTarget(row + 1, col);
@@ -279,7 +274,7 @@ namespace Battleships
             }
             else
             {
-// either targetting Or hitting... both are the same here
+                // either targetting Or hitting... both are the same here
                 _CurrentState = AIStates.HittingShip;
                 ReOrderTargets();
             }
@@ -291,12 +286,13 @@ namespace Battleships
         ///     ''' </summary>
         private void ReOrderTargets()
         {
-// if the ship Is lying on the same row, call MoveToTopOfStack to optimise on the row
-            if (_CurrentTarget.SameRow)
-                MoveToTopOfStack(_CurrentTarget.ShotAt.Row, -1);
+            // if the ship Is lying on the same row, call MoveToTopOfStack to optimise on the row
+            if (_CurrentTarget.SameRow) { MoveToTopOfStack(_CurrentTarget.ShotAt.Row, -1); }
             else if (_CurrentTarget.SameColumn)
-// else if the ship Is lying on the same column, call MoveToTopOfStack to optimise on the column
+            {
+                // else if the ship Is lying on the same column, call MoveToTopOfStack to optimise on the column
                 MoveToTopOfStack(-1, _CurrentTarget.ShotAt.Column);
+            }
         }
 
         /// <summary>
@@ -317,16 +313,12 @@ namespace Battleships
             while (_Targets.Count > 0)
             {
                 current = _Targets.Pop();
-                if (current.ShotAt.Row == row || current.ShotAt.Column == column)
-                    _Match.Push(current);
-                else
-                    _NoMatch.Push(current);
+                if (current.ShotAt.Row == row || current.ShotAt.Column == column) { _Match.Push(current); }
+                else { _NoMatch.Push(current); }
             }
 
-            foreach (Target t in _NoMatch)
-                _Targets.Push(t);
-            foreach (Target t in _Match)
-                _Targets.Push(t);
+            foreach (Target t in _NoMatch) { _Targets.Push(t); }
+            foreach (Target t in _Match) { _Targets.Push(t); } 
         }
 
         /// <summary>
@@ -336,11 +328,10 @@ namespace Battleships
         ///     ''' <param name="column">the column of the targets location</param>
         private void AddTarget(int row, int column)
         {
-            if (row >= 0 && column >= 0 && row < EnemyGrid.Height && column < EnemyGrid.Width &&
-                EnemyGrid.Item(row, column) ==
-                TileView.Sea)
-                _Targets.Push(new
-            Target(new Location(row, column), _CurrentTarget.ShotAt));
+            if (row >= 0 && column >= 0 && row < EnemyGrid.Height && column < EnemyGrid.Width && EnemyGrid.Item(row, column) == TileView.Sea)
+            {
+                _Targets.Push(new Target(new Location(row, column), _CurrentTarget.ShotAt));
+            }
         }
     }
 }

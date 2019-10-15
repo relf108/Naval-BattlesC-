@@ -6,12 +6,21 @@ namespace Battleships
 {
     public class AttackResult
     {
+        private ResultOfAttack _Value;
+        private Ship _Ship;
+        private string _Text;
+        private int _Row;
+        private int _Column;
+
         // <summary>
         // The result of the attack
         // </summary>
         // <value>The result of the attack</value>
         // <returns>The result of the attack</returns>
-        public readonly ResultOfAttack Value { get; private set; }
+        public ResultOfAttack Value
+        {
+            get { return _Value; }
+        }
 
         // <summary>
         // The ship, if any, involved in this result
@@ -19,7 +28,10 @@ namespace Battleships
         // <value>The ship, if any, involved in this result</value>
         // <returns>The ship, if any, involved in this result</returns>
 
-        public readonly Ship Ship { get; private set; }
+        public Ship Ship
+        {
+            get { return _Ship; }
+        }
 
         // <summary>
         // A textual description of the result.
@@ -28,29 +40,38 @@ namespace Battleships
         // <returns>A textual description of the result.</returns>
         // <remarks>A textual description of the result.</remarks>
 
-        public readonly string Text { get; private set; }
+        public string Text
+        {
+            get { return _Text; }
+        }
 
         // <summary>
         // The row where the attack occurred
         // </summary>
-        public readonly int Row { get; private set; }
+        public int Row
+        {
+            get { return _Row; }
+        }
 
         // <summary>
         // The column where the attack occurred
         // </summary>
-        public readonly int Column { get; private set; }
+        public int Column
+        {
+            get { return _Column; }
+        }
 
         // <summary>
         // Set the _Value to the PossibleAttack value
         // </summary>
         // <param name="value">either hit, miss, destroyed, shotalready</param>
-        public void SurroundingClass(ResultOfAttack value, string text, int row, int column)
+        public AttackResult(ResultOfAttack value, string text, int row, int column)
         {
-            Value = value;
-            Text = text;
-            Ship = null;
-            Row = row;
-            Column = column;
+            _Value = value;
+            _Text = text;
+            _Ship = null;
+            _Row = row;
+            _Column = column;
         }
 
         // <summary>
@@ -58,12 +79,10 @@ namespace Battleships
         // </summary>
         // <param name="value">either hit, miss, destroyed, shotalready</param>
         // <param name="ship">the ship information</param>
-        public void SurroundingClass(ResultOfAttack value, Ship ship, string text, int row, int column) :
-            this
-
-        (value, text, row, column)
+        public AttackResult(ResultOfAttack value, Ship ship, string text, int row, int column)
         {
-            Ship = ship;
+            new AttackResult(value, text, row, column);
+            _Ship = ship;
         }
 
         // <summary>
@@ -72,8 +91,10 @@ namespace Battleships
         // <returns>The textual information about the attack</returns>
         public override string ToString()
         {
-            if (Ship == null) return Text;
-            return Text + " " + Ship.Name;
+            if (Ship == null) { return Text; }
+
+
+            return (Text + " " + Ship.Name);
         }
     }
 }
