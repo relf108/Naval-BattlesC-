@@ -11,7 +11,7 @@ namespace Battleships
         private Bitmap _Background;
         private readonly Dictionary<string, Font> _Fonts = new Dictionary<string, Font>();
 
-        private readonly Dictionary<string, Bitmap> _Images = new Dictionary<string, Bitmap>();
+        public Dictionary<string, Bitmap> _Images = new Dictionary<string, Bitmap>();
         private Bitmap _Loader;
         private Bitmap _LoaderFull;
         private Bitmap _LoaderEmpty;
@@ -83,7 +83,7 @@ namespace Battleships
         // <param name="image">Name of image</param>
         // <returns>The image loaded with this name</returns>
 
-        public Bitmap GameImage(string image)
+        public static Bitmap GameImage(string image)
         {
             return _Images[image];
         }

@@ -57,13 +57,11 @@ namespace Battleships
 
                     default:
                         {
-                            Throw New ApplicationException("AI has gone in an imvalid state");
-                            break;
+                            throw new ApplicationException("AI has gone in an imvalid state");
                         }
                 }
-            } while (row < 0 || column < 0 || row >= EnemyGrid.Height || column >= EnemyGrid.Width ||
-                     EnemyGrid.Item(row, column) !=
-                     TileView.Sea); // while inside the grid And Not a sea tile do the search
+
+            } while (row < 0 || column < 0 || row >= EnemyGrid.Height || column >= EnemyGrid.Width || EnemyGrid.Item(row, column) != TileView.Sea); // while inside the grid And Not a sea tile do the search
         }
 
         /// <summary>
@@ -75,8 +73,7 @@ namespace Battleships
         private void TargetCoords(ref int row, ref int column)
         {
             Location l = _Targets.Pop();
-            if (_Targets.Count == 0)
-                _CurrentState = AIStates.Searching;
+            if (_Targets.Count == 0) { _CurrentState = AIStates.Searching; }
             row = l.Row;
             column = l.Column;
         }
@@ -110,9 +107,7 @@ namespace Battleships
                 AddTarget(row + 1, col);
                 AddTarget(row, col + 1);
             }
-
-            elseif(result.Value == ResultOfAttack.ShotAlready)
-            Throw New ApplicationException("Error in AI");
+            else if (result.Value == ResultOfAttack.ShotAlready) { throw new ApplicationException("Error in AI"); }
         }
 
         /// <summary>
@@ -122,10 +117,10 @@ namespace Battleships
         ///     ''' <param name="column">the column of the targets location</param>
         private void AddTarget(int row, int column)
         {
-            if (row >= 0 && column >= 0 && row < EnemyGrid.Height && column < EnemyGrid.Width &&
-                EnemyGrid.Item(row, column) ==
-                TileView.Sea)
+            if (row >= 0 && column >= 0 && row < EnemyGrid.Height && column < EnemyGrid.Width && EnemyGrid.Item(row, column) == TileView.Sea)
+            {
                 _Targets.Push(new Location(row, column));
+            }
         }
     }
 }

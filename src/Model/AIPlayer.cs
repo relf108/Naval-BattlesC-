@@ -4,6 +4,7 @@
 /// ''' </summary>
 
 using System;
+using SwinGameSDK;
 
 namespace Battleships
 {
@@ -25,11 +26,8 @@ namespace Battleships
             ///         ''' <returns>The row of the shot</returns>
             public int Row
             {
-                get
-                {
-                    Return _Row;
-                }
-                set => _Row = value;
+                get { return _Row; }
+                set { _Row = value; }
             }
 
             /// <summary>
@@ -39,8 +37,8 @@ namespace Battleships
             ///         ''' <returns>The column of the shot</returns>
             public int Column
             {
-                get => _Column;
-                set => _Column = value;
+                get { return _Column; }
+                set { _Column = value; }
             }
 
             /// <summary>
@@ -60,7 +58,7 @@ namespace Battleships
             ///         ''' <param name="this">location 1</param>
             ///         ''' <param name="other">location 2</param>
             ///         ''' <returns>true if location 1 and location 2 are at the same spot</returns>
-            public static bool Operator ==(Location @this, Location other)
+            public static bool operator ==(Location @this, Location other)
             {
                 return @this != null && other != null && @this.Row == other.Row && @this.Column == other.Column;
             }
@@ -71,7 +69,7 @@ namespace Battleships
             ///         ''' <param name="this">location 1</param>
             ///         ''' <param name="other">location 2</param>
             ///         ''' <returns>true if location 1 and location 2 are not at the same spot</returns>
-            public static bool Operator !=(Location @this, Location other)
+            public static bool operator !=(Location @this, Location other)
             {
                 return @this == null || other == null || @this.Row != other.Row || @this.Column != other.Column;
             }
@@ -106,16 +104,13 @@ namespace Battleships
             AttackResult result;
             var row = 0;
             var column = 0;
-            do
+            do //keep hitting until a miss
             {
                 Delay();
-                GenerateCoords(ref row, ref column);
-                result = _game.Shoot(row, column);
+                GenerateCoords(ref row, ref column); // generate coordinates For shot
+                result = _game.Shoot(row, column); // take shot 
                 ProcessShot(row, column, result);
-            } while (result.Value != ResultOfAttack.Miss && result.Value != ResultOfAttack.GameOver &&
-                     !SwinGame.WindowCloseRequested
-                ) // generate coordinates For shot// take shot
-                ;
+            } while (result.Value != ResultOfAttack.Miss && result.Value != ResultOfAttack.GameOver && !SwinGame.WindowCloseRequested());
 
             return result;
         }
@@ -128,9 +123,9 @@ namespace Battleships
             int i;
             for (i = 0; i <= 150; i++)
             {
-    // Dont delay if window Is closed
-                if (SwinGame.WindowCloseRequested)
-                    return;
+                // Dont delay if window Is closed
+                if (SwinGame.WindowCloseRequested()) { return; }
+
                 SwinGame.Delay(5);
                 SwinGame.ProcessEvents();
                 SwinGame.RefreshScreen();
