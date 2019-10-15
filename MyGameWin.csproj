@@ -61,7 +61,6 @@
     <Compile Include="src\Model\Direction.cs" />
     <Compile Include="src\Model\ISeaGrid.cs" />
     <Compile Include="src\Model\Player.cs" />
-    <Compile Include="src\Model\Program.cs" />
     <Compile Include="src\Model\ResultOfAttack.cs" />
     <Compile Include="src\Model\SeaGrid.cs" />
     <Compile Include="src\Model\SeaGridAdapter.cs" />
