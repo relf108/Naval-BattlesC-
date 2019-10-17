@@ -9,8 +9,7 @@ namespace Battleships
     /// </summary>
     public class Tile
     {
-        private Ship
-            _Ship /* TODO Change to default(_) if this is not a reference type */; // the ship the tile belongs to
+        private Ship _Ship /* TODO Change to default(_) if this is not a reference type */; // the ship the tile belongs to
 
         /// <summary>
         ///     ''' The tile constructor will know where it is on the grid, and is its a ship
