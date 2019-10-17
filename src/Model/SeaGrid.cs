@@ -19,6 +19,7 @@ namespace Battleships
         private const int _WIDTH = 10;
         private const int _HEIGHT = 10;
         private readonly Dictionary<ShipName, Ship> _Ships;
+        private Tile _gameTiles;
 
         /// <summary>
         ///     ''' SeaGrid constructor, a seagrid has a number of tiles stored in an array
@@ -30,7 +31,11 @@ namespace Battleships
             int i;
             for (i = 0; i <= Width - 1; i++)
             for (var j = 0; j <= Height - 1; j++)
-                _GameTiles(i, j) = new Tile(i, j, null);
+            {
+                _gameTiles = _GameTiles(i, j);
+                var gameTiles = _gameTiles;
+                _gameTiles = new Tile(i, j, null);
+            }
 
             _Ships = ships;
         }
@@ -93,7 +98,7 @@ namespace Battleships
         /// <param name="y">y coordiante of the tile</param>
         /// '''
         /// <returns></returns>
-        public TileView Item => _GameTiles(x, y).View;
+        public TileView Item => _GameTiles(Width, Height).View;
 
         /// <summary>
         ///     ''' HitTile hits a tile at a row/col, and whatever tile has been hit, a
@@ -139,7 +144,15 @@ namespace Battleships
             }
         }
 
-        private Tile _GameTiles(_WIDTH - 1, _HEIGHT -1);
+        private Tile _GameTiles(int _WIDTH , int _HEIGHT)
+        {
+            _WIDTH = SeaGrid._WIDTH - 1;
+            _HEIGHT = SeaGrid._HEIGHT - 1;
+
+            Tile tile = new Tile(_WIDTH, _HEIGHT, _Ships[0]);
+
+            return tile;
+        }
 
         /// <summary>
         ///     ''' MoveShips allows for ships to be placed on the seagrid
@@ -181,7 +194,7 @@ namespace Battleships
                 var currentCol = col;
                 int dRow, dCol;
 
-                if (direction == direction.LeftRight)
+                if (direction == Direction.LeftRight)
                 {
                     dRow = 0;
                     dCol = 1;

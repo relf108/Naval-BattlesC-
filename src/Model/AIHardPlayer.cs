@@ -104,7 +104,7 @@ namespace Battleships
                         break;
                     }
                 }
-            } while (row < 0 || column < 0 || row >= EnemyGrid.Height || column >= EnemyGrid.Width || EnemyGrid.Item(row, column) != TileView.Sea); // while inside the grid And Not a sea tile do the search
+            } while (row < 0 || column < 0 || row >= EnemyGrid.Height || column >= EnemyGrid.Width || EnemyGrid.Item != TileView.Sea); // while inside the grid And Not a sea tile do the search
         }
 
         /// <summary>
@@ -131,7 +131,7 @@ namespace Battleships
         {
             row = _Random.Next(0, EnemyGrid.Height);
             column = _Random.Next(0, EnemyGrid.Width);
-            _CurrentTarget = new Target(New Location(row, column), null /* TODO Change to default(_) if this Is Not a reference type */);
+            _CurrentTarget = new Target(new Location(row, column), null /* TODO Change to default(_) if this Is Not a reference type */);
         }
 
         /// <summary>
@@ -328,7 +328,7 @@ namespace Battleships
         ///     ''' <param name="column">the column of the targets location</param>
         private void AddTarget(int row, int column)
         {
-            if (row >= 0 && column >= 0 && row < EnemyGrid.Height && column < EnemyGrid.Width && EnemyGrid.Item(row, column) == TileView.Sea)
+            if (row >= 0 && column >= 0 && row < EnemyGrid.Height && column < EnemyGrid.Width && EnemyGrid.Item == TileView.Sea)
             {
                 _Targets.Push(new Target(new Location(row, column), _CurrentTarget.ShotAt));
             }

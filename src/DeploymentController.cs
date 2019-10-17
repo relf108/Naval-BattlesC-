@@ -72,6 +72,11 @@ namespace Battleships
             }
         }
 
+        private void EndDeployment()
+        {
+            throw new NotImplementedException();
+        }
+
         /// <summary>
         ///     ''' The user has clicked somewhere on the screen, check if its is a deployment and deploy
         ///     ''' the current ship if that is the case.

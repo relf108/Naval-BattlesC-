@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace Battleships
@@ -11,7 +12,7 @@ namespace Battleships
     public class Player : IEnumerable<Ship>
     {
         protected static Random _Random = new Random();
-        private Dictionary<ShipName, Ship> _Ships = new Dictionary<ShipName, Ship>();
+        private static Dictionary<ShipName, Ship> _Ships = new Dictionary<ShipName, Ship>();
         private SeaGrid _playerGrid = new SeaGrid(_Ships);
         private ISeaGrid _enemyGrid;
         protected BattleShipsGame _game;
@@ -141,7 +142,7 @@ namespace Battleships
         // has.
         // </summary>
         // <returns>A Ship enumerator</returns>
-        public override IEnumerator<Ship> GetEnumerator()
+        public IEnumerator<Ship> GetEnumerator()
         {
             Ship[] result = new Ship[_Ships.Values.Count];
             _Ships.Values.CopyTo(result, 0);
@@ -153,7 +154,7 @@ namespace Battleships
         // <summary>
         // Vitual Attack allows the player to shoot
         // </summary>
-        public override AttackResult Attack()
+        public virtual AttackResult Attack()
         {
             // human does nothing here...
             return null;
@@ -216,6 +217,11 @@ namespace Battleships
                     }
                 } while (!placementSuccessful);
             }
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
         }
     }
 }
