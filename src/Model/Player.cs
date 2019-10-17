@@ -25,6 +25,21 @@ namespace Battleships
             get { return _game; }
             set { _game = value; }
         }
+
+
+        public Player(BattleShipsGame controller)
+        {
+            _game = controller;
+
+            // for each ship add the ships name so the seagrid knows about them
+            foreach (ShipName name in Enum.GetValues(typeof(ShipName)))
+            {
+                if (name != Battleships.ShipName.None) { _Ships.Add(name, new Battleships.Ship(name)); }
+            }
+            RandomizeDeployment();
+        }
+
+        
         // <summary>
         // Sets the grid of the enemy player
         // </summary>
@@ -60,7 +75,7 @@ namespace Battleships
         public bool IsDestroyed
         {
             // Check if all ships are destroyed... -1 for the none ship
-            get { return _playerGrid.ShipsKilled = Enum.GetValues(GetType(ShipName)).Length - 1; }
+            get { return _playerGrid.ShipsKilled == Enum.GetValues(typeof(ShipName)).Length - 1; }
         }
 
         // <summary>
@@ -74,7 +89,7 @@ namespace Battleships
         public Ship Ship(ShipName name)
         {
             if (name == ShipName.None) { return null; }
-            return _Ships.Item(name);
+            return _Ships[name];
         }
         // <summary>
         // The number of shots the player has made
@@ -126,7 +141,7 @@ namespace Battleships
         // has.
         // </summary>
         // <returns>A Ship enumerator</returns>
-        public IEnumerator<Ship> GetEnumerator()
+        public override IEnumerator<Ship> GetEnumerator()
         {
             Ship[] result = new Ship[_Ships.Values.Count];
             _Ships.Values.CopyTo(result, 0);
@@ -166,13 +181,14 @@ namespace Battleships
             }
             return result;
         }
+
         public virtual void RandomizeDeployment()
         {
             bool placementSuccessful;
             Direction heading;
 
             // for each ship to deploy in shipist
-            foreach (ShipName shipToPlace in Enum.GetValues(GetType(ShipName)))
+            foreach (ShipName shipToPlace in Enum.GetValues(typeof(ShipName)))
             {
                 if (shipToPlace == ShipName.None) { continue; }
                 placementSuccessful = false;

@@ -73,7 +73,7 @@ namespace Battleships
         // <param name="grid">the grid to draw</param>
         // <param name="thePlayer">the players ships to show</param>
         // <param name="showShips">indicates if the ships should be shown</param>
-        public static void DrawField(ISeaGrid grid, Player thePlayer, bool showShips)
+        public void DrawField(ISeaGrid grid, Player thePlayer, bool showShips)
         {
             DrawCustomField(grid, thePlayer, false, showShips, FIELD_LEFT, FIELD_TOP, FIELD_WIDTH, FIELD_HEIGHT, CELL_WIDTH,
                 CELL_HEIGHT, CELL_GAP);
@@ -85,7 +85,7 @@ namespace Battleships
         // <param name="grid">the grid to show</param>
         // <param name="thePlayer">the player to show the ships of</param>
 
-        public static void DrawSmallField(ISeaGrid grid, Player thePlayer)
+        public void DrawSmallField(ISeaGrid grid, Player thePlayer)
         {
             const int SMALL_FIELD_LEFT = 39;
             const int SMALL_FIELD_TOP = 373;
@@ -95,8 +95,7 @@ namespace Battleships
             const int SMALL_FIELD_CELL_HEIGHT = 13;
             const int SMALL_FIELD_CELL_GAP = 4;
 
-            DrawCustomField(grid, thePlayer, true, true, SMALL_FIELD_LEFT, SMALL_FIELD_TOP, SMALL_FIELD_WIDTH,
-                SMALL_FIELD_HEIGHT, SMALL_FIELD_CELL_WIDTH, SMALL_FIELD_CELL_HEIGHT, SMALL_FIELD_CELL_GAP);
+            DrawCustomField(grid, thePlayer, true, true, SMALL_FIELD_LEFT, SMALL_FIELD_TOP, SMALL_FIELD_WIDTH, SMALL_FIELD_HEIGHT, SMALL_FIELD_CELL_WIDTH, SMALL_FIELD_CELL_HEIGHT, SMALL_FIELD_CELL_GAP);
         }
 
         // <summary>
@@ -113,7 +112,7 @@ namespace Battleships
         // <param name="cellWidth">the width of each cell</param>
         // <param name="cellHeight">the height of each cell</param>
         // <param name="cellGap">the gap between the cells</param>
-        public static void DrawCustomField(ISeaGrid grid, Player thePlayer, bool small, bool showShips, int left, int top,
+        public void DrawCustomField(ISeaGrid grid, Player thePlayer, bool small, bool showShips, int left, int top,
             int width, int height, int cellWidth, int cellHeight, int cellGap)
         {
             // SwinGame.FillRectangle(Color.Blue, left, top, width, height)
@@ -130,7 +129,7 @@ namespace Battleships
                 {
                     colLeft = left + (cellGap + cellWidth) * col;
 
-                    Color fillColor = new Color();
+                    Color fillColor;
                     var draw = true;
 
 
@@ -160,7 +159,8 @@ namespace Battleships
                                 fillColor = LARGE_HIT;
                             }
                             break;
-                        case (TileView.Sea) & (TileView.Ship):
+                        case (TileView.Sea):
+                        case (TileView.Ship):
                             if (small) { fillColor = SMALL_SEA; }
                             else { draw = false; }
                             break;

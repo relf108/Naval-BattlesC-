@@ -7,7 +7,7 @@ using SwinGameSDK;
 /// ''' </summary>
 namespace Battleships
 {
-    internal class DeploymentController
+    public class DeploymentController
     {
         private const int SHIPS_TOP = 98;
         private const int SHIPS_LEFT = 20;
@@ -34,7 +34,7 @@ namespace Battleships
         ///     ''' of the ships to add, randomising deployment, end then ending
         ///     ''' deployment
         ///     ''' </remarks>
-        public static void HandleDeploymentInput()
+        public void HandleDeploymentInput()
         {
             if (SwinGame.KeyTyped(KeyCode.EscapeKey)) { GameController.AddNewState(GameState.ViewingGameMenu); }
             if (SwinGame.KeyTyped(KeyCode.UpKey) || SwinGame.KeyTyped(KeyCode.DownKey)) { _currentDirection = Direction.UpDown; }
