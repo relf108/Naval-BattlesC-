@@ -214,7 +214,8 @@ public static class GameResources
 		SwinGame.DrawBitmap(_LoaderEmpty, BG_X, BG_Y);
 		SwinGame.DrawBitmap(_LoaderFull, 0, 0);
 
-		SwinGame.DrawTextLines(message, Color.White, Color.Transparent, _LoadingFont, FontAlignment.AlignCenter, TX, TY, TW, TH);
+		SwinGame.DrawText(message, Color.White, Color.Transparent, _LoadingFont, 
+			FontAlignment.AlignCenter, SwinGame.RectangleFrom(new Point2D(), TW, TH));
 
 		SwinGame.RefreshScreen();
 		SwinGame.ProcessEvents();
