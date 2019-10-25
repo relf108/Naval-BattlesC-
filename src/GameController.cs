@@ -136,7 +136,7 @@ public static class GameController
 			UtilityFunctions.AddSplash(row, column);
 		}
 
-		Audio.PlaySoundEffect(GameResources.GameSound("Miss"));
+		Audio.PlaySoundEffect(GameResources.GameSound("Ahem"));
 
 		UtilityFunctions.DrawAnimationSequence();
 	}

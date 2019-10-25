@@ -16,6 +16,7 @@ public static class GameResources
 		NewFont("Courier", "cour.ttf", 14);
 		NewFont("CourierSmall", "cour.ttf", 8);
 		NewFont("Menu", "ffaccess.ttf", 8);
+        NewFont("Varsity", "varsity_regular.ttf", 8);
 	}
 
 	private static void LoadImages()
@@ -54,6 +55,7 @@ public static class GameResources
 		NewSound("Miss", "watershot.wav");
 		NewSound("Winner", "winner.wav");
 		NewSound("Lose", "lose.wav");
+        NewSound("Ahem", "ahem.wav");
 	}
 
 	private static void LoadMusic()
@@ -116,7 +118,7 @@ public static class GameResources
 	private static Bitmap _LoaderEmpty;
 	private static Font _LoadingFont;
 
-	private static SoundEffect _StartSound;
+	public static SoundEffect _StartSound;
 	/// <summary>
 	/// The Resources Class stores all of the Games Media Resources, such as Images, Fonts
 	/// Sounds, Music.
@@ -158,7 +160,7 @@ public static class GameResources
 
 	private static void ShowLoadingScreen()
 	{
-		_Background = SwinGame.LoadBitmap(SwinGame.PathToResource("SplashBack.png", ResourceKind.BitmapResource));
+		_Background = SwinGame.LoadBitmap(SwinGame.PathToResource("battleship.jpg", ResourceKind.BitmapResource));
 		SwinGame.DrawBitmap(_Background, 0, 0);
 		SwinGame.RefreshScreen();
 		SwinGame.ProcessEvents();
@@ -187,7 +189,7 @@ public static class GameResources
 
 		int i = 0;
 		for (i = 0; i <= ANI_CELL_COUNT - 1; i++) {
-			SwinGame.DrawBitmap(_Background, 0, 0);
+			SwinGame.DrawBitmap(_Background, 100, 100);
 			SwinGame.DrawBitmap(_Animation, 0, 0);
 			SwinGame.Delay(20);
 			SwinGame.RefreshScreen();
@@ -232,7 +234,7 @@ public static class GameResources
 		SwinGame.FreeBitmap(_Animation);
 		SwinGame.FreeBitmap(_LoaderEmpty);
 		SwinGame.FreeBitmap(_LoaderFull);
-		Audio.FreeSoundEffect(_StartSound);
+		//SwinGame.FreeSoundEffect(_StartSound);
 		SwinGame.ChangeScreenSize(width, height);
 	}
 
