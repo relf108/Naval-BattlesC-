@@ -29,3 +29,7 @@ C:\Users\jyest\Desktop\Dev Proj 1\Naval-BattlesC-\obj\x86\Debug-Windows\MyGameWi
 C:\Users\jyest\Desktop\Dev Proj 1\Naval-BattlesC-\obj\x86\Debug-Windows\MyGameWin.csproj.CoreCompileInputs.cache
 C:\Users\jyest\Desktop\Dev Proj 1\Naval-BattlesC-\obj\x86\Debug-Windows\MyGame.exe
 C:\Users\jyest\Desktop\Dev Proj 1\Naval-BattlesC-\obj\x86\Debug-Windows\MyGame.pdb
+C:\Users\102570369\Desktop\Naval-BattlesC-\obj\x86\Debug-Windows\MyGameWin.csprojAssemblyReference.cache
+C:\Users\102570369\Desktop\Naval-BattlesC-\obj\x86\Debug-Windows\MyGameWin.csproj.CoreCompileInputs.cache
+C:\Users\102570369\Desktop\Naval-BattlesC-\obj\x86\Debug-Windows\MyGame.exe
+C:\Users\102570369\Desktop\Naval-BattlesC-\obj\x86\Debug-Windows\MyGame.pdb
