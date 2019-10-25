@@ -213,8 +213,10 @@ public static class GameResources
 		fullW = 260 * number / STEPS;
 		SwinGame.DrawBitmap(_LoaderEmpty, BG_X, BG_Y);
 		SwinGame.DrawBitmapPart(_LoaderFull, 0, 0, fullW, 66, BG_X, BG_Y);
-
-		SwinGame.DrawTextLines(message, Color.White, Color.Transparent, _LoadingFont, FontAlignment.AlignCenter, TX, TY, TW, TH);
+        Point2D pt = new Point2D();
+        pt.X = TX;
+        pt.Y = TY;
+		SwinGame.DrawText(message, Color.White, Color.Transparent, _LoadingFont, FontAlignment.AlignCenter, SwinGame.RectangleFrom(pt, TW, TH));
 
 		SwinGame.RefreshScreen();
 		SwinGame.ProcessEvents();
