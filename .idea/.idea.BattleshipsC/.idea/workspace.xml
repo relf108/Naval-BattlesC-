@@ -1,0 +1,1431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8cab264e-00b3-485e-bc33-2c035bec98c8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/MyGameUnx.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MyGameUnx.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyGameUnx.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Debug/MyGame.exe" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Debug/MyGame.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameLogic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameLogic.cs" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GameResources.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="29" column="33" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="33" />
+              <folding>
+                <marker date="1572216821442" expanded="false" signature="7:169" ph="..." />
+                <marker date="1572216821442" expanded="true" signature="204:8013" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="240:460" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="495:1205" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="979:1107" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="1240:1519" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="1553:1604" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="1607:1777" ph="/// Gets a Font Loaded in the Resources ... " />
+                <marker date="1572216821442" expanded="true" signature="1820:1849" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="1852:2027" ph="/// Gets an Image loaded in the Resources ... " />
+                <marker date="1572216821442" expanded="true" signature="2074:2105" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="2108:2276" ph="/// Gets an sound loaded in the Resources ... " />
+                <marker date="1572216821442" expanded="true" signature="2328:2359" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="2362:2531" ph="/// Gets the music loaded in the Resources ... " />
+                <marker date="1572216821442" expanded="true" signature="2577:2607" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="3181:3318" ph="/// The Resources Class stores all of the Games Media Resources, such as Images, Fonts ... " />
+                <marker date="1572216821442" expanded="true" signature="3355:3961" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="4003:4791" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="4833:5328" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="5124:5299" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="5390:5908" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="5970:6347" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="6421:6538" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="6604:6721" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="6821:6884" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="6985:7052" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="7118:7236" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="7302:7413" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="7447:7524" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="7489:7521" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="7559:7641" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="7604:7638" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="7676:7767" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="7728:7764" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="7801:7878" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="7845:7875" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="7915:8011" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GameState.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+              <folding>
+                <marker date="1572216821442" expanded="false" signature="7:150" ph="..." />
+                <marker date="1572216821442" expanded="true" signature="151:326" ph="/// The GameStates represent the state of the Battleships game play. ... " />
+                <marker date="1572216821442" expanded="true" signature="349:1123" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="353:424" ph="/// The player is viewing the main menu. ... " />
+                <marker date="1572216821442" expanded="true" signature="445:515" ph="/// The player is viewing the game menu ... " />
+                <marker date="1572216821442" expanded="true" signature="536:611" ph="/// The player is looking at the high scores ... " />
+                <marker date="1572216821442" expanded="true" signature="634:709" ph="/// The player is altering the game settings ... " />
+                <marker date="1572216821442" expanded="true" signature="731:799" ph="/// Players are deploying their ships ... " />
+                <marker date="1572216821442" expanded="true" signature="814:899" ph="/// Players are attempting to locate each others ships ... " />
+                <marker date="1572216821442" expanded="true" signature="916:997" ph="/// One player has won, showing the victory screen ... " />
+                <marker date="1572216821442" expanded="true" signature="1013:1111" ph="/// The player has quit. Show ending credits and terminate the game ... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/HighScoreController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1515">
+              <caret line="116" column="43" selection-start-line="116" selection-start-column="43" selection-end-line="116" selection-end-column="43" />
+              <folding>
+                <marker date="1572216821442" expanded="false" signature="7:186" ph="..." />
+                <marker date="1572216821442" expanded="true" signature="188:330" ph="/// Controls displaying and collecting high score data. ... " />
+                <marker date="1572216821442" expanded="true" signature="363:5005" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="441:564" ph="/// The score structure is used to keep the name and ... " />
+                <marker date="1572216821442" expanded="true" signature="600:1024" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="649:856" ph="/// Allows scores to be compared to facilitate sorting ... " />
+                <marker date="1572216821442" expanded="true" signature="891:1021" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="917:991" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="1085:1300" ph="/// Loads the scores from the highscores text file. ... " />
+                <marker date="1572216821442" expanded="true" signature="1334:1901" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="1674:1881" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="1904:2122" ph="/// Saves the scores back to the highscores text file. ... " />
+                <marker date="1572216821442" expanded="true" signature="2156:2463" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="2397:2441" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="2466:2537" ph="/// Draws the high scores to the screen. ... " />
+                <marker date="1572216821442" expanded="true" signature="2574:3358" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="2915:3355" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="3015:3184" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="3361:3472" ph="/// Handles the user input during the top score screen. ... " />
+                <marker date="1572216821442" expanded="true" signature="3515:3697" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="3652:3694" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="3700:3920" ph="/// Read the user's name for their highsSwinGame. ... " />
+                <marker date="1572216821442" expanded="true" signature="3965:5003" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="4114:5000" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="4497:4730" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="4799:4879" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/MenuController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1920">
+              <caret line="140" column="23" selection-start-line="140" selection-start-column="23" selection-end-line="140" selection-end-column="23" />
+              <folding>
+                <marker date="1572216821442" expanded="false" signature="7:169" ph="..." />
+                <marker date="1572216821442" expanded="true" signature="171:364" ph="/// The menu controller handles the drawing and user interactions ... " />
+                <marker date="1572216821442" expanded="true" signature="393:9153" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="398:549" ph="/// The menu structure for the game. ... " />
+                <marker date="1572216821442" expanded="true" signature="603:792" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="620:671" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="688:732" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="749:788" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="1870:1971" ph="/// Handles the processing of user input when the main menu is showing ... " />
+                <marker date="1572216821442" expanded="true" signature="2013:2055" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="2058:2159" ph="/// Handles the processing of user input when the main menu is showing ... " />
+                <marker date="1572216821442" expanded="true" signature="2202:2339" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="2294:2336" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="2342:2502" ph="/// Handle input in the game menu. ... " />
+                <marker date="1572216821442" expanded="true" signature="2544:2586" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="2589:2961" ph="/// Handles input for the specified menu. ... " />
+                <marker date="1572216821442" expanded="true" signature="3032:3552" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="3080:3138" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="3193:3532" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="3267:3422" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="3359:3417" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="3442:3528" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="3555:3624" ph="/// Draws the main menu to the screen. ... " />
+                <marker date="1572216821442" expanded="true" signature="3659:3803" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="3665:3773" ph="/* Clears the Screen to Black ... */" />
+                <marker date="1572216821442" expanded="true" signature="3806:3874" ph="/// Draws the Game menu to the screen ... " />
+                <marker date="1572216821442" expanded="true" signature="3909:4050" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="3915:4020" ph="/* Clears the Screen to Black ... */" />
+                <marker date="1572216821442" expanded="true" signature="4053:4187" ph="/// Draws the settings menu to the screen. ... " />
+                <marker date="1572216821442" expanded="true" signature="4222:4398" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="4228:4335" ph="/* Clears the Screen to Black ... */" />
+                <marker date="1572216821442" expanded="true" signature="4401:4548" ph="/// Draw the buttons associated with a top level menu. ... " />
+                <marker date="1572216821442" expanded="true" signature="4591:4624" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="4627:5129" ph="/// Draws the menu at the indicated level. ... " />
+                <marker date="1572216821442" expanded="true" signature="5196:5907" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="5347:5904" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="5803:5900" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="5910:6141" ph="/// Determined if the mouse is over one of the button in the main menu. ... " />
+                <marker date="1572216821442" expanded="true" signature="6192:6238" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="6241:6575" ph="/// Checks if the mouse is over one of the buttons in a menu. ... " />
+                <marker date="1572216821442" expanded="true" signature="6648:6870" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="6873:7103" ph="/// A button has been clicked, perform the associated action. ... " />
+                <marker date="1572216821442" expanded="true" signature="7164:7389" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="7184:7386" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="7392:7535" ph="/// The main menu was clicked, perform the button's action. ... " />
+                <marker date="1572216821442" expanded="true" signature="7590:7986" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="7612:7983" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="7989:8133" ph="/// The setup menu was clicked, perform the button's action. ... " />
+                <marker date="1572216821442" expanded="true" signature="8189:8586" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="8211:8496" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="8589:8732" ph="/// The game menu was clicked, perform the button's action. ... " />
+                <marker date="1572216821442" expanded="true" signature="8787:9151" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="8809:9148" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/GameLogic.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+              <folding>
+                <marker date="1572218813816" expanded="true" signature="43:600" ph="{...}" />
+                <marker date="1572218813816" expanded="true" signature="72:598" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/GameController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-47">
+              <caret line="314" column="38" selection-start-line="314" selection-start-column="38" selection-end-line="314" selection-end-column="38" />
+              <folding>
+                <marker date="1572216821442" expanded="false" signature="7:169" ph="..." />
+                <marker date="1572216821442" expanded="true" signature="171:338" ph="/// The GameController is responsible for controlling the game, ... " />
+                <marker date="1572216821442" expanded="true" signature="373:9681" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="587:793" ph="/// Returns the current state of the game, indicating which screen is ... " />
+                <marker date="1572216821442" expanded="true" signature="832:868" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="871:1009" ph="/// Returns the human player. ... " />
+                <marker date="1572216821442" expanded="true" signature="1044:1073" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="1076:1223" ph="/// Returns the computer player. ... " />
+                <marker date="1572216821442" expanded="true" signature="1261:1287" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="1313:1533" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="1536:1673" ph="/// Starts a new game. ... " />
+                <marker date="1572216821442" expanded="true" signature="1705:2291" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="1850:2064" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="2294:2387" ph="/// Stops listening to the old game once a new game is started ... " />
+                <marker date="1572216821442" expanded="true" signature="2419:2580" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="2583:2806" ph="/// Listens to the game grids for any changes and redraws the screen ... " />
+                <marker date="1572216821442" expanded="true" signature="2870:2920" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="2999:3182" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="3024:3076" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="3262:3443" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="3287:3336" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="3446:3710" ph="/// Listens for attacks to be completed. ... " />
+                <marker date="1572216821442" expanded="true" signature="3783:5003" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="3893:3956" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="4054:5000" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="4440:4503" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="4538:4606" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="5006:5239" ph="/// Completes the deployment phase of the game and ... " />
+                <marker date="1572216821442" expanded="true" signature="5275:5416" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="5419:5699" ph="/// Gets the player to attack the indicated row and column. ... " />
+                <marker date="1572216821442" expanded="true" signature="5744:5863" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="5866:6013" ph="/// Gets the AI to attack. ... " />
+                <marker date="1572216821442" expanded="true" signature="6045:6164" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="6167:6461" ph="/// Checks the results of the attack and switches to ... " />
+                <marker date="1572216821442" expanded="true" signature="6521:6762" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="6549:6759" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="6765:7012" ph="/// Handles the user SwinGame. ... " />
+                <marker date="1572216821442" expanded="true" signature="7050:7818" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="7138:7775" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="7821:7992" ph="/// Draws the current state of the game to the screen. ... " />
+                <marker date="1572216821442" expanded="true" signature="8025:8749" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="8091:8679" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="8752:8936" ph="/// Move the game to a new state. The current state is maintained ... " />
+                <marker date="1572216821442" expanded="true" signature="8985:9046" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="9049:9193" ph="/// End the current state and add in the new state. ... " />
+                <marker date="1572216821442" expanded="true" signature="9245:9297" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="9300:9387" ph="/// Ends the current state, returning to the prior state ... " />
+                <marker date="1572216821442" expanded="true" signature="9425:9447" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="9450:9596" ph="/// Sets the difficulty for the next level of the game. ... " />
+                <marker date="1572216821442" expanded="true" signature="9648:9678" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DeploymentController.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1230">
+              <caret line="92" column="18" selection-start-line="92" selection-start-column="18" selection-end-line="92" selection-end-column="18" />
+              <folding>
+                <marker date="1572216821442" expanded="false" signature="7:169" ph="..." />
+                <marker date="1572216821442" expanded="true" signature="171:290" ph="/// The DeploymentController controls the players actions ... " />
+                <marker date="1572216821442" expanded="true" signature="324:6747" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="1037:1315" ph="/// Handles user input for the Deployment phase of the game. ... " />
+                <marker date="1572216821442" expanded="true" signature="1359:2812" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="1407:1470" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="1549:1595" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="1676:1725" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="1766:1824" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="1879:2809" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="1993:2029" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="2225:2267" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="2391:2442" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="2569:2620" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="2745:2805" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="2815:3112" ph="/// The user has clicked somewhere on the screen, check if its is a deployment and deploy ... " />
+                <marker date="1572216821442" expanded="true" signature="3149:3975" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="3608:3972" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="3679:3968" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="3724:3828" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="3850:3963" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="3978:4105" ph="/// Draws the deployment screen showing the field and the ships ... " />
+                <marker date="1572216821442" expanded="true" signature="4142:6273" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="4342:4656" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="4456:4652" ph="/* SwinGame.DrawText(&quot;U/D&quot;, Color.Gray, GameFont(&quot;Menu&quot;), UP_DOWN_BUTTON_LEFT, TOP_BUTTONS_TOP) ... */" />
+                <marker date="1572216821442" expanded="true" signature="4773:4969" ph="/* SwinGame.DrawText(&quot;U/D&quot;, Color.White, GameFont(&quot;Menu&quot;), UP_DOWN_BUTTON_LEFT, TOP_BUTTONS_TOP) ... */" />
+                <marker date="1572216821442" expanded="true" signature="5049:5747" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="5102:5743" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="5133:5496" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="5249:5490" ph="/* SwinGame.FillRectangle(Color.LightBlue, SHIPS_LEFT, SHIPS_TOP + i * SHIPS_HEIGHT, SHIPS_WIDTH, SHIPS_HEIGHT) ... */" />
+                <marker date="1572216821442" expanded="true" signature="5502:5737" ph="/* SwinGame.DrawRectangle(Color.Black, SHIPS_LEFT, SHIPS_TOP + i * SHIPS_HEIGHT, SHIPS_WIDTH, SHIPS_HEIGHT) ... */" />
+                <marker date="1572216821442" expanded="true" signature="5797:6133" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="5900:6129" ph="/* SwinGame.FillRectangle(Color.LightBlue, PLAY_BUTTON_LEFT, PLAY_BUTTON_TOP, PLAY_BUTTON_WIDTH, PLAY_BUTTON_HEIG ... */" />
+                <marker date="1572216821442" expanded="true" signature="6276:6431" ph="/// Gets the ship that the mouse is currently over in the selection panel. ... " />
+                <marker date="1572216821442" expanded="true" signature="6477:6745" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="6541:6717" ph="{...}" />
+                <marker date="1572216821442" expanded="true" signature="6692:6713" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Model/Ship.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+              <folding>
+                <marker date="1572216821446" expanded="false" signature="7:129" ph="..." />
+                <marker date="1572216821446" expanded="true" signature="130:455" ph="/// A Ship has all the details about itself. For example the shipname, ... " />
+                <marker date="1572216821446" expanded="true" signature="473:2972" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="659:788" ph="/// The type of ship ... " />
+                <marker date="1572216821446" expanded="true" signature="809:942" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="817:939" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="865:902" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="945:1142" ph="/// The number of cells that this ship occupies. ... " />
+                <marker date="1572216821446" expanded="true" signature="1160:1194" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="1197:1459" ph="/// The number of hits that the ship has taken. ... " />
+                <marker date="1572216821446" expanded="true" signature="1477:1510" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="1513:1673" ph="/// The row location of the ship ... " />
+                <marker date="1572216821446" expanded="true" signature="1690:1717" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="1738:1765" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="1795:1828" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="1857:1989" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="1992:2118" ph="/// Add tile adds the ship tile ... " />
+                <marker date="1572216821446" expanded="true" signature="2150:2176" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="2179:2255" ph="/// Remove clears the tile back to a sea tile ... " />
+                <marker date="1572216821446" expanded="true" signature="2277:2360" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="2313:2339" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="2380:2417" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="2420:2544" ph="/// IsDeployed returns if the ships is deployed, if its deplyed it has more than ... " />
+                <marker date="1572216821446" expanded="true" signature="2569:2608" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="2635:2670" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="2673:2847" ph="/// Record that the ship is now deployed. ... " />
+                <marker date="1572216821446" expanded="true" signature="2910:2970" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="2974:3226" ph="/* ======================================================= ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Model/AIHardPlayer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1215">
+              <caret line="106" column="5" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
+              <folding>
+                <marker date="1572216821446" expanded="false" signature="7:150" ph="..." />
+                <marker date="1572216821446" expanded="true" signature="151:528" ph="/// AIHardPlayer is a type of player. This AI will know directions of ships ... " />
+                <marker date="1572216821446" expanded="true" signature="565:11026" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="570:691" ph="/// Target allows the AI to know more things, for example the source of a ... " />
+                <marker date="1572216821446" expanded="true" signature="715:1801" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="796:935" ph="/// The target shot at ... " />
+                <marker date="1572216821446" expanded="true" signature="961:993" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="997:1226" ph="/// The source that added this location as a target. ... " />
+                <marker date="1572216821446" expanded="true" signature="1252:1284" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="1338:1389" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="1393:1513" ph="/// If source shot and shootat shot are on the same row then  ... " />
+                <marker date="1572216821446" expanded="true" signature="1536:1587" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="1591:1715" ph="/// If source shot and shootat shot are on the same column then  ... " />
+                <marker date="1572216821446" expanded="true" signature="1741:1798" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="1804:2005" ph="/// Private enumarator for AI states. currently there are two states, ... " />
+                <marker date="1572216821446" expanded="true" signature="2028:2300" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="2034:2110" ph="/// The AI is searching for its next target ... " />
+                <marker date="1572216821446" expanded="true" signature="2127:2197" ph="/// The AI is trying to target a ship ... " />
+                <marker date="1572216821446" expanded="true" signature="2218:2283" ph="/// The AI is locked onto a ship ... " />
+                <marker date="1572216821446" expanded="true" signature="2552:2558" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="2561:2823" ph="/// GenerateCoords will call upon the right methods to generate the appropriate shooting ... " />
+                <marker date="1572216821446" expanded="true" signature="2892:3554" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="2933:3041" ph="/* check which state the AI is in and uppon that choose which coordinate generation ... */" />
+                <marker date="1572216821446" expanded="true" signature="3068:3356" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="3557:3816" ph="/// TargetCoords is used when a ship has been hit and it will try and destroy ... " />
+                <marker date="1572216821446" expanded="true" signature="3872:3992" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="3995:4232" ph="/// SearchCoords will randomly generate shots within the grid as long as its not hit that tile already ... " />
+                <marker date="1572216821446" expanded="true" signature="4288:4446" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="4449:4850" ph="/// ProcessShot is able to process each shot that is made and call the right methods belonging ... " />
+                <marker date="1572216821446" expanded="true" signature="4926:5336" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="4954:5266" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="5339:5763" ph="/// ProcessDetroy is able to process the destroyed ships targets and remove _LastHit targets. ... " />
+                <marker date="1572216821446" expanded="true" signature="5821:6743" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="6073:6740" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="6098:6384" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="6133:6290" ph="/* Source is nnothing if the ship was originally hit in ... */" />
+                <marker date="1572216821446" expanded="true" signature="6315:6379" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="6494:6697" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="6584:6692" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="6746:7128" ph="/// RemoveShotsAround will remove targets that belong to the destroyed ship by checking if  ... " />
+                <marker date="1572216821446" expanded="true" signature="7179:7845" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="7233:7298" ph="/* create a new stack ... */" />
+                <marker date="1572216821446" expanded="true" signature="7333:7508" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="7532:7639" ph="/* clear the _Targets stack ... */" />
+                <marker date="1572216821446" expanded="true" signature="7673:7699" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="7848:8279" ph="/// ProcessHit gets the last hit location coordinates and will ask AddTarget to ... " />
+                <marker date="1572216821446" expanded="true" signature="8322:8734" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="8549:8597" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="8737:8963" ph="/// ReOrderTargets will optimise the targeting by re-orderin the stack that the targets are in. ... " />
+                <marker date="1572216821446" expanded="true" signature="8995:9372" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="9116:9173" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="9210:9369" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="9375:10024" ph="/// MoveToTopOfStack will re-order the stack by checkin the coordinates of each target ... " />
+                <marker date="1572216821446" expanded="true" signature="10076:10528" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="10230:10406" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="10330:10362" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="10441:10467" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="10499:10525" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="10531:10755" ph="/// AddTarget will add the targets it will shoot onto a stack ... " />
+                <marker date="1572216821446" expanded="true" signature="10801:11023" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="10935:11020" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="11028:11280" ph="/* ======================================================= ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Model/ISeaGrid.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+              <folding>
+                <marker date="1572216821446" expanded="false" signature="7:150" ph="..." />
+                <marker date="1572216821446" expanded="true" signature="151:307" ph="/// The ISeaGrid defines the read only interface of a Grid. This ... " />
+                <marker date="1572216821446" expanded="true" signature="333:1097" ph="{...}" />
+                <marker date="1572216821446" expanded="true" signature="381:452" ph="/// Indicates that the grid has changed. ... " />
+                <marker date="1572216821446" expanded="true" signature="484:788" ph="/// Provides access to the given row/column ... " />
+                <marker date="1572216821446" expanded="true" signature="833:1054" ph="/// Mark the indicated tile as shot. ... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>button</find>
+      <find>screenW</find>
+      <find>screen</find>
+      <find>Draw</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/GameController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Model/AIPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Model/SeaGridAdapter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/GameResources.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Model/AIOption.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/MenuController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/DiscoveryController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Model/SeaGrid.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Model/Ship.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/DeploymentController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Model/AttackResult.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/HighScoreController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/EndingGameController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Model/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Model/ISeaGrid.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Model/Tile.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/GameState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Model/AIHardPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/GameLogic.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/Model/AIMediumPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/Model/AIHardPlayer.cs" />
+        <option value="$PROJECT_DIR$/src/Model/AIMediumPlayer.cs" />
+        <option value="$PROJECT_DIR$/src/Model/Player.cs" />
+        <option value="$PROJECT_DIR$/src/Model/SeaGrid.cs" />
+        <option value="$PROJECT_DIR$/src/Model/SeaGridAdapter.cs" />
+        <option value="$PROJECT_DIR$/src/DeploymentController.cs" />
+        <option value="$PROJECT_DIR$/src/MenuController.cs" />
+        <option value="$PROJECT_DIR$/src/GameController.cs" />
+        <option value="$PROJECT_DIR$/src/GameLogic.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/.idea.BattleshipsC/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/.idea.BattleshipsC/.idea/indexLayout.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="961" />
+    <option name="width" value="959" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="BattleshipsC" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="BattleshipsC" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MyGameUnx" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="BattleshipsC" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MyGameUnx" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="src" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="Naval-BattlesC-" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="Naval-BattlesC-" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="src" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="Naval-BattlesC-" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="src" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="Model" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bin/Debug/MyGame.vshost.exe" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.Default">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/bin/Debug/MyGame.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/MyGameUnx.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.5" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameLogic.Main" type="DotNetStaticMethod" factoryName=".NET Static Method" temporary="true">
+      <option name="EXE_PATH" value="$APPLICATION_HOME_DIR$/lib/ReSharperHost/JetLauncherILc.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/MyGameUnx.csproj" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.5" />
+      <option name="CLASS_NAME" value="GameLogic" />
+      <option name="METHOD_NAME" value="Main" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="RunExe" factoryName=".NET Executable" nameIsGenerated="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/bin/Debug/MyGame.vshost.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build Solution" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue=".NET Executable.Unnamed" />
+      <item itemvalue=".NET Project.Default" />
+      <item itemvalue=".NET Static Method.GameLogic.Main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue=".NET Static Method.GameLogic.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8cab264e-00b3-485e-bc33-2c035bec98c8" name="Default Changelist" comment="" />
+      <created>1571349610592</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571349610592</updated>
+      <workItem from="1571349613863" duration="1369000" />
+      <workItem from="1572216867080" duration="1234000" />
+      <workItem from="1572218585854" duration="243000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2846000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="-1" width="1920" height="1040" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14589989" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840257" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946752" weight="0.329718" />
+      <window_info anchor="bottom" id="NuGet" order="7" sideWeight="0.49946752" weight="0.329718" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49946752" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50159746" side_tool="true" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Build" order="15" sideWeight="0.49733758" weight="0.329718" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/DiscoveryController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-494">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding>
+            <marker date="1571349542627" expanded="false" signature="6:32" ph="..." />
+            <marker date="1571349542627" expanded="true" signature="34:129" ph="/* ''' The battle phase is handled by the DiscoveryController. ... */" />
+            <marker date="1571349542627" expanded="true" signature="151:2876" ph="{...}" />
+            <marker date="1571349542627" expanded="true" signature="190:2874" ph="{...}" />
+            <marker date="1571349542627" expanded="true" signature="205:495" ph="///     ''' Handles input during the discovery phase of the game. ... " />
+            <marker date="1571349542627" expanded="true" signature="545:766" ph="{...}" />
+            <marker date="1571349542627" expanded="true" signature="776:884" ph="///     ''' Attack the location that the mouse if over. ... " />
+            <marker date="1571349542627" expanded="true" signature="923:1567" ph="{...}" />
+            <marker date="1571349542627" expanded="true" signature="1370:1557" ph="{...}" />
+            <marker date="1571349542627" expanded="true" signature="1469:1543" ph="{...}" />
+            <marker date="1571349542627" expanded="true" signature="1577:1682" ph="///     ''' Draws the game during the attack phase. ... " />
+            <marker date="1571349542627" expanded="true" signature="1725:2868" ph="{...}" />
+            <marker date="1571349542627" expanded="true" signature="2026:2158" ph="{...}" />
+            <marker date="1571349542627" expanded="true" signature="2175:2308" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EndingGameController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
+          <folding>
+            <marker date="1571349542627" expanded="false" signature="6:32" ph="..." />
+            <marker date="1571349542627" expanded="true" signature="34:174" ph="/* ''' The EndingGameController is responsible for managing the interactions at the end ... */" />
+            <marker date="1571349542627" expanded="true" signature="196:1773" ph="{...}" />
+            <marker date="1571349542627" expanded="true" signature="238:1771" ph="{...}" />
+            <marker date="1571349542627" expanded="true" signature="253:375" ph="///     ''' Draw the end of the game screen, shows the win/lose state ... " />
+            <marker date="1571349542627" expanded="true" signature="411:1228" ph="{...}" />
+            <marker date="1571349542627" expanded="true" signature="887:963" ph="{...}" />
+            <marker date="1571349542627" expanded="true" signature="980:1059" ph="{...}" />
+            <marker date="1571349542627" expanded="true" signature="1238:1431" ph="///     ''' Handle the input during the end of the game. Any interaction ... " />
+            <marker date="1571349542627" expanded="true" signature="1474:1765" ph="{...}" />
+            <marker date="1571349542627" expanded="true" signature="1627:1755" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/AttackResult.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <marker date="1571349542627" expanded="true" signature="0:87" ph="/* AttackResult gives the result after a shot has been made. ... */" />
+            <marker date="1571349542627" expanded="true" signature="110:2821" ph="{...}" />
+            <marker date="1571349542627" expanded="true" signature="142:2819" ph="{...}" />
+            <marker date="1571349542627" expanded="true" signature="310:486" ph="/* The result of the attack ... */" />
+            <marker date="1571349542627" expanded="true" signature="522:577" ph="{...}" />
+            <marker date="1571349542627" expanded="true" signature="587:814" ph="/* The ship, if any, involved in this result ... */" />
+            <marker date="1571349542627" expanded="true" signature="840:894" ph="{...}" />
+            <marker date="1571349542627" expanded="true" signature="904:1183" ph="/* A textual description of the result. ... */" />
+            <marker date="1571349542627" expanded="true" signature="1211:1265" ph="{...}" />
+            <marker date="1571349542627" expanded="true" signature="1275:1354" ph="/* The row where the attack occurred ... */" />
+            <marker date="1571349542627" expanded="true" signature="1377:1430" ph="{...}" />
+            <marker date="1571349542627" expanded="true" signature="1440:1522" ph="/* The column where the attack occurred ... */" />
+            <marker date="1571349542627" expanded="true" signature="1548:1604" ph="{...}" />
+            <marker date="1571349542627" expanded="true" signature="1614:1782" ph="/* Set the _Value to the PossibleAttack value ... */" />
+            <marker date="1571349542627" expanded="true" signature="1866:2020" ph="{...}" />
+            <marker date="1571349542627" expanded="true" signature="2030:2284" ph="/* Set the _Value to the PossibleAttack value, and the _Ship to the ship ... */" />
+            <marker date="1571349542627" expanded="true" signature="2379:2481" ph="{...}" />
+            <marker date="1571349542627" expanded="true" signature="2491:2657" ph="/* Displays the textual information about the attack ... */" />
+            <marker date="1571349542627" expanded="true" signature="2699:2813" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Player.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1395">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+          <folding>
+            <marker date="1572216821446" expanded="false" signature="7:150" ph="..." />
+            <marker date="1572216821446" expanded="true" signature="151:347" ph="/// Player has its own _PlayerGrid, and can see an _EnemyGrid, it can also check if ... " />
+            <marker date="1572216821446" expanded="true" signature="387:5656" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="679:847" ph="/// Returns the game that the player is part of. ... " />
+            <marker date="1572216821446" expanded="true" signature="877:930" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="933:1042" ph="/// Sets the grid of the enemy player ... " />
+            <marker date="1572216821446" expanded="true" signature="1066:1100" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1144:1448" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1339:1419" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1371:1415" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1451:1571" ph="/// The EnemyGrid is a ISeaGrid because you shouldn't be allowed to see the enemies ships ... " />
+            <marker date="1572216821446" expanded="true" signature="1599:1662" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1665:1788" ph="/// The PlayerGrid is just a normal SeaGrid where the players ships can be deployed and seen ... " />
+            <marker date="1572216821446" expanded="true" signature="1816:1850" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1853:1940" ph="/// ReadyToDeploy returns true if all ships are deployed ... " />
+            <marker date="1572216821446" expanded="true" signature="1968:2014" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2041:2193" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2196:2485" ph="/// Returns the Player's ship with the given name. ... " />
+            <marker date="1572216821446" expanded="true" signature="2519:2594" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2597:2753" ph="/// The number of shots the player has made ... " />
+            <marker date="1572216821446" expanded="true" signature="2772:2801" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2820:2848" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2851:3017" ph="/// Total number of shots that missed ... " />
+            <marker date="1572216821446" expanded="true" signature="3037:3067" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="3087:3220" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="3095:3217" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="3117:3137" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="3223:3366" ph="/// Makes it possible to enumerate over the ships the player ... " />
+            <marker date="1572216821446" expanded="true" signature="3412:3598" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="3651:3687" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="3690:3833" ph="/// Makes it possible to enumerate over the ships the player ... " />
+            <marker date="1572216821446" expanded="true" signature="3869:4055" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="4058:4133" ph="/// Vitual Attack allows the player to shoot ... " />
+            <marker date="1572216821446" expanded="true" signature="4171:4223" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="4226:4438" ph="/// Shoot at a given row/column ... " />
+            <marker date="1572216821446" expanded="true" signature="4485:4789" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="4616:4768" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="4833:5654" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="5025:5651" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="5296:5336" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="5470:5564" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="5571:5612" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="5658:5910" ph="/* ======================================================= ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/SeaGrid.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2715">
+          <caret line="196" column="13" selection-start-line="196" selection-start-column="13" selection-end-line="196" selection-end-column="13" />
+          <folding>
+            <marker date="1572216821446" expanded="false" signature="7:150" ph="..." />
+            <marker date="1572216821446" expanded="true" signature="151:444" ph="/// The SeaGrid is the grid upon which the ships are deployed. ... " />
+            <marker date="1572216821446" expanded="true" signature="476:5186" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="652:734" ph="/// The sea grid has changed and should be redrawn. ... " />
+            <marker date="1572216821446" expanded="true" signature="773:932" ph="/// The width of the sea grid. ... " />
+            <marker date="1572216821446" expanded="true" signature="951:980" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="983:1142" ph="/// The height of the sea grid ... " />
+            <marker date="1572216821446" expanded="true" signature="1162:1192" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1195:1276" ph="/// ShipsKilled returns the number of ships killed ... " />
+            <marker date="1572216821446" expanded="true" signature="1301:1336" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1339:1525" ph="/// Show the tile view ... " />
+            <marker date="1572216821446" expanded="true" signature="1561:1607" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1610:1693" ph="/// AllDeployed checks if all the ships are deployed ... " />
+            <marker date="1572216821446" expanded="true" signature="1719:1846" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1727:1843" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1766:1822" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1791:1817" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1849:1955" ph="/// SeaGrid constructor, a seagrid has a number of tiles stored in an array ... " />
+            <marker date="1572216821446" expanded="true" signature="2005:2249" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2129:2227" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2172:2223" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2252:2559" ph="/// MoveShips allows for ships to be placed on the seagrid ... " />
+            <marker date="1572216821446" expanded="true" signature="2635:2733" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2736:2995" ph="/// AddShip add a ship to the SeaGrid ... " />
+            <marker date="1572216821446" expanded="true" signature="3070:3948" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="3080:3740" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="3236:3270" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="3415:3693" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="3503:3583" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="3761:3864" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="3873:3945" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="3899:3941" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="3951:4282" ph="/// HitTile hits a tile at a row/col, and whatever tile has been hit, a ... " />
+            <marker date="1572216821446" expanded="true" signature="4329:5184" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="4339:5100" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="4400:4525" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="4637:4713" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="4803:4987" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="5109:5181" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="5135:5177" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="5188:5440" ph="/* ======================================================= ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/SeaGridAdapter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          <folding>
+            <marker date="1572216821446" expanded="false" signature="7:150" ph="..." />
+            <marker date="1572216821446" expanded="true" signature="151:337" ph="/// The SeaGridAdapter allows for the change in a sea grid view. Whenever a ship is ... " />
+            <marker date="1572216821446" expanded="true" signature="376:2280" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="408:585" ph="/// Create the SeaGridAdapter, with the grid, and it will allow it to be changed ... " />
+            <marker date="1572216821446" expanded="true" signature="622:701" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="704:932" ph="/// MyGrid_Changed causes the grid to be redrawn by raising a changed event ... " />
+            <marker date="1572216821446" expanded="true" signature="989:1045" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1016:1042" ph="{...}" />
+            <marker date="1572216821446" expanded="false" signature="1048:2277" ph="&quot;ISeaGrid Members&quot;" />
+            <marker date="1572216821446" expanded="true" signature="1077:1376" ph="/// Changes the discovery grid. Where there is a ship we will sea water ... " />
+            <marker date="1572216821446" expanded="true" signature="1413:1561" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1421:1558" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1492:1523" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1564:1639" ph="/// Indicates that the grid has been changed ... " />
+            <marker date="1572216821446" expanded="true" signature="1678:1736" ph="/// Get the width of a tile ... " />
+            <marker date="1572216821446" expanded="true" signature="1755:1791" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1794:1855" ph="/// Get the height of the tile ... " />
+            <marker date="1572216821446" expanded="true" signature="1875:1912" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1915:2176" ph="/// HitTile calls oppon _MyGrid to hit a tile at the row, col ... " />
+            <marker date="1572216821446" expanded="true" signature="2223:2265" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2282:2534" ph="/* ======================================================= ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Tile.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="15" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="15" />
+          <folding>
+            <marker date="1572216821446" expanded="false" signature="7:150" ph="..." />
+            <marker date="1572216821446" expanded="true" signature="151:272" ph="/// Tile knows its location on the grid, if it is a ship and if it has been  ... " />
+            <marker date="1572216821446" expanded="true" signature="290:3016" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="547:710" ph="/// Has the tile been shot? ... " />
+            <marker date="1572216821446" expanded="true" signature="729:782" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="785:959" ph="/// The row of the tile in the grid ... " />
+            <marker date="1572216821446" expanded="true" signature="976:1008" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1011:1194" ph="/// The column of the tile in the grid ... " />
+            <marker date="1572216821446" expanded="true" signature="1214:1249" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1252:1360" ph="/// Ship allows for a tile to check if there is ship and add a ship to a tile ... " />
+            <marker date="1572216821446" expanded="true" signature="1379:1637" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1411:1634" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1435:1517" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1479:1512" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1640:1898" ph="/// The tile constructor will know where it is on the grid, and is its a ship ... " />
+            <marker date="1572216821446" expanded="true" signature="1940:2003" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2006:2085" ph="/// Clearship will remove the ship from the tile ... " />
+            <marker date="1572216821446" expanded="true" signature="2110:2132" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2135:2216" ph="/// View is able to tell the grid what the tile is ... " />
+            <marker date="1572216821446" expanded="true" signature="2239:2676" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2247:2673" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2308:2472" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2358:2392" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2542:2575" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2679:2811" ph="/// Shoot allows a tile to be shot at, and if the tile has been hit before ... " />
+            <marker date="1572216821446" expanded="true" signature="2834:3014" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2861:2928" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2901:2924" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="3018:3270" ph="/* ======================================================= ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/AIPlayer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="101" column="17" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
+          <folding>
+            <marker date="1572216821446" expanded="false" signature="7:169" ph="..." />
+            <marker date="1572216821446" expanded="true" signature="170:343" ph="/// The AIPlayer is a type of player. It can readomly deploy ships, it also has the ... " />
+            <marker date="1572216821446" expanded="true" signature="383:4123" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="388:541" ph="/// Location can store the location of the last hit made by an ... " />
+            <marker date="1572216821446" expanded="true" signature="567:2461" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="617:759" ph="/// The row of the shot ... " />
+            <marker date="1572216821446" expanded="true" signature="777:831" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="835:986" ph="/// The column of the shot ... " />
+            <marker date="1572216821446" expanded="true" signature="1007:1067" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1071:1271" ph="/// Sets the last hit made to the local variables ... " />
+            <marker date="1572216821446" expanded="true" signature="1310:1354" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1358:1596" ph="/// Check if two locations are equal ... " />
+            <marker date="1572216821446" expanded="true" signature="1661:1903" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1907:2153" ph="/// Check if two locations are not equal ... " />
+            <marker date="1572216821446" expanded="true" signature="2218:2458" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2515:2521" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2524:2733" ph="/// Generate a valid row, column to shoot at ... " />
+            <marker date="1572216821446" expanded="true" signature="2806:3090" ph="/// The last shot had the following result. Child classes can use this ... " />
+            <marker date="1572216821446" expanded="true" signature="3170:3305" ph="/// The AI takes its attacks until its go is over. ... " />
+            <marker date="1572216821446" expanded="true" signature="3344:3792" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="3795:3876" ph="/// Wait a short period to simulate the think time ... " />
+            <marker date="1572216821446" expanded="true" signature="3898:4121" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="3944:4118" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="4125:4377" ph="/* ======================================================= ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/AIMediumPlayer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1590">
+          <caret line="119" column="1" selection-start-line="119" selection-start-column="1" selection-end-line="119" selection-end-column="1" />
+          <folding>
+            <marker date="1572216821446" expanded="false" signature="7:150" ph="..." />
+            <marker date="1572216821446" expanded="true" signature="152:289" ph="/// The AIMediumPlayer is a type of AIPlayer where it will try and destroy a ship ... " />
+            <marker date="1572216821446" expanded="true" signature="328:3882" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="332:533" ph="/// Private enumarator for AI states. currently there are two states, ... " />
+            <marker date="1572216821446" expanded="true" signature="556:591" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="776:782" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="785:1092" ph="/// GenerateCoordinates should generate random shooting coordinates ... " />
+            <marker date="1572216821446" expanded="true" signature="1161:1764" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1175:1283" ph="/* check which state the AI is in and uppon that choose which coordinate generation ... */" />
+            <marker date="1572216821446" expanded="true" signature="1310:1567" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1767:2026" ph="/// TargetCoords is used when a ship has been hit and it will try and destroy ... " />
+            <marker date="1572216821446" expanded="true" signature="2082:2224" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2227:2464" ph="/// SearchCoords will randomly generate shots within the grid as long as its not hit that tile already ... " />
+            <marker date="1572216821446" expanded="true" signature="2520:2614" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2617:3028" ph="/// ProcessShot will be called uppon when a ship is found. ... " />
+            <marker date="1572216821446" expanded="true" signature="3105:3423" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="3151:3311" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="3365:3420" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="3426:3650" ph="/// AddTarget will add the targets it will shoot onto a stack ... " />
+            <marker date="1572216821446" expanded="true" signature="3695:3880" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="3827:3877" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/AIOption.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="30" column="35" selection-start-line="30" selection-start-column="35" selection-end-line="30" selection-end-column="35" />
+          <folding>
+            <marker date="1572216821446" expanded="false" signature="7:150" ph="..." />
+            <marker date="1572216821446" expanded="true" signature="151:208" ph="/// The different AI levels. ... " />
+            <marker date="1572216821446" expanded="true" signature="229:471" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="233:295" ph="/// Easy, total random shooting ... " />
+            <marker date="1572216821446" expanded="true" signature="305:373" ph="/// Medium, marks squares around hits ... " />
+            <marker date="1572216821446" expanded="true" signature="385:463" ph="/// As medium, but removes shots once it misses ... " />
+            <marker date="1572216821446" expanded="true" signature="473:725" ph="/* ======================================================= ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameResources.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="29" column="33" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="33" />
+          <folding>
+            <marker date="1572216821442" expanded="false" signature="7:169" ph="..." />
+            <marker date="1572216821442" expanded="true" signature="204:8013" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="240:460" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="495:1205" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="979:1107" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="1240:1519" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="1553:1604" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="1607:1777" ph="/// Gets a Font Loaded in the Resources ... " />
+            <marker date="1572216821442" expanded="true" signature="1820:1849" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="1852:2027" ph="/// Gets an Image loaded in the Resources ... " />
+            <marker date="1572216821442" expanded="true" signature="2074:2105" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="2108:2276" ph="/// Gets an sound loaded in the Resources ... " />
+            <marker date="1572216821442" expanded="true" signature="2328:2359" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="2362:2531" ph="/// Gets the music loaded in the Resources ... " />
+            <marker date="1572216821442" expanded="true" signature="2577:2607" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="3181:3318" ph="/// The Resources Class stores all of the Games Media Resources, such as Images, Fonts ... " />
+            <marker date="1572216821442" expanded="true" signature="3355:3961" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="4003:4791" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="4833:5328" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="5124:5299" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="5390:5908" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="5970:6347" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="6421:6538" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="6604:6721" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="6821:6884" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="6985:7052" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="7118:7236" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="7302:7413" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="7447:7524" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="7489:7521" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="7559:7641" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="7604:7638" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="7676:7767" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="7728:7764" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="7801:7878" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="7845:7875" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="7915:8011" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HighScoreController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1515">
+          <caret line="116" column="43" selection-start-line="116" selection-start-column="43" selection-end-line="116" selection-end-column="43" />
+          <folding>
+            <marker date="1572216821442" expanded="false" signature="7:186" ph="..." />
+            <marker date="1572216821442" expanded="true" signature="188:330" ph="/// Controls displaying and collecting high score data. ... " />
+            <marker date="1572216821442" expanded="true" signature="363:5005" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="441:564" ph="/// The score structure is used to keep the name and ... " />
+            <marker date="1572216821442" expanded="true" signature="600:1024" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="649:856" ph="/// Allows scores to be compared to facilitate sorting ... " />
+            <marker date="1572216821442" expanded="true" signature="891:1021" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="917:991" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="1085:1300" ph="/// Loads the scores from the highscores text file. ... " />
+            <marker date="1572216821442" expanded="true" signature="1334:1901" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="1674:1881" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="1904:2122" ph="/// Saves the scores back to the highscores text file. ... " />
+            <marker date="1572216821442" expanded="true" signature="2156:2463" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="2397:2441" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="2466:2537" ph="/// Draws the high scores to the screen. ... " />
+            <marker date="1572216821442" expanded="true" signature="2574:3358" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="2915:3355" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="3015:3184" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="3361:3472" ph="/// Handles the user input during the top score screen. ... " />
+            <marker date="1572216821442" expanded="true" signature="3515:3697" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="3652:3694" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="3700:3920" ph="/// Read the user's name for their highsSwinGame. ... " />
+            <marker date="1572216821442" expanded="true" signature="3965:5003" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="4114:5000" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="4497:4730" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="4799:4879" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DeploymentController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="92" column="18" selection-start-line="92" selection-start-column="18" selection-end-line="92" selection-end-column="18" />
+          <folding>
+            <marker date="1572216821442" expanded="false" signature="7:169" ph="..." />
+            <marker date="1572216821442" expanded="true" signature="171:290" ph="/// The DeploymentController controls the players actions ... " />
+            <marker date="1572216821442" expanded="true" signature="324:6747" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="1037:1315" ph="/// Handles user input for the Deployment phase of the game. ... " />
+            <marker date="1572216821442" expanded="true" signature="1359:2812" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="1407:1470" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="1549:1595" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="1676:1725" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="1766:1824" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="1879:2809" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="1993:2029" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="2225:2267" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="2391:2442" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="2569:2620" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="2745:2805" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="2815:3112" ph="/// The user has clicked somewhere on the screen, check if its is a deployment and deploy ... " />
+            <marker date="1572216821442" expanded="true" signature="3149:3975" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="3608:3972" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="3679:3968" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="3724:3828" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="3850:3963" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="3978:4105" ph="/// Draws the deployment screen showing the field and the ships ... " />
+            <marker date="1572216821442" expanded="true" signature="4142:6273" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="4342:4656" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="4456:4652" ph="/* SwinGame.DrawText(&quot;U/D&quot;, Color.Gray, GameFont(&quot;Menu&quot;), UP_DOWN_BUTTON_LEFT, TOP_BUTTONS_TOP) ... */" />
+            <marker date="1572216821442" expanded="true" signature="4773:4969" ph="/* SwinGame.DrawText(&quot;U/D&quot;, Color.White, GameFont(&quot;Menu&quot;), UP_DOWN_BUTTON_LEFT, TOP_BUTTONS_TOP) ... */" />
+            <marker date="1572216821442" expanded="true" signature="5049:5747" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="5102:5743" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="5133:5496" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="5249:5490" ph="/* SwinGame.FillRectangle(Color.LightBlue, SHIPS_LEFT, SHIPS_TOP + i * SHIPS_HEIGHT, SHIPS_WIDTH, SHIPS_HEIGHT) ... */" />
+            <marker date="1572216821442" expanded="true" signature="5502:5737" ph="/* SwinGame.DrawRectangle(Color.Black, SHIPS_LEFT, SHIPS_TOP + i * SHIPS_HEIGHT, SHIPS_WIDTH, SHIPS_HEIGHT) ... */" />
+            <marker date="1572216821442" expanded="true" signature="5797:6133" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="5900:6129" ph="/* SwinGame.FillRectangle(Color.LightBlue, PLAY_BUTTON_LEFT, PLAY_BUTTON_TOP, PLAY_BUTTON_WIDTH, PLAY_BUTTON_HEIG ... */" />
+            <marker date="1572216821442" expanded="true" signature="6276:6431" ph="/// Gets the ship that the mouse is currently over in the selection panel. ... " />
+            <marker date="1572216821442" expanded="true" signature="6477:6745" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="6541:6717" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="6692:6713" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/Ship.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="13" column="14" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <folding>
+            <marker date="1572216821446" expanded="false" signature="7:129" ph="..." />
+            <marker date="1572216821446" expanded="true" signature="130:455" ph="/// A Ship has all the details about itself. For example the shipname, ... " />
+            <marker date="1572216821446" expanded="true" signature="473:2972" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="659:788" ph="/// The type of ship ... " />
+            <marker date="1572216821446" expanded="true" signature="809:942" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="817:939" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="865:902" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="945:1142" ph="/// The number of cells that this ship occupies. ... " />
+            <marker date="1572216821446" expanded="true" signature="1160:1194" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1197:1459" ph="/// The number of hits that the ship has taken. ... " />
+            <marker date="1572216821446" expanded="true" signature="1477:1510" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1513:1673" ph="/// The row location of the ship ... " />
+            <marker date="1572216821446" expanded="true" signature="1690:1717" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1738:1765" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1795:1828" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1857:1989" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1992:2118" ph="/// Add tile adds the ship tile ... " />
+            <marker date="1572216821446" expanded="true" signature="2150:2176" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2179:2255" ph="/// Remove clears the tile back to a sea tile ... " />
+            <marker date="1572216821446" expanded="true" signature="2277:2360" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2313:2339" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2380:2417" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2420:2544" ph="/// IsDeployed returns if the ships is deployed, if its deplyed it has more than ... " />
+            <marker date="1572216821446" expanded="true" signature="2569:2608" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2635:2670" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2673:2847" ph="/// Record that the ship is now deployed. ... " />
+            <marker date="1572216821446" expanded="true" signature="2910:2970" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2974:3226" ph="/* ======================================================= ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/AIHardPlayer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="106" column="5" selection-start-line="106" selection-start-column="5" selection-end-line="106" selection-end-column="5" />
+          <folding>
+            <marker date="1572216821446" expanded="false" signature="7:150" ph="..." />
+            <marker date="1572216821446" expanded="true" signature="151:528" ph="/// AIHardPlayer is a type of player. This AI will know directions of ships ... " />
+            <marker date="1572216821446" expanded="true" signature="565:11026" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="570:691" ph="/// Target allows the AI to know more things, for example the source of a ... " />
+            <marker date="1572216821446" expanded="true" signature="715:1801" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="796:935" ph="/// The target shot at ... " />
+            <marker date="1572216821446" expanded="true" signature="961:993" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="997:1226" ph="/// The source that added this location as a target. ... " />
+            <marker date="1572216821446" expanded="true" signature="1252:1284" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1338:1389" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1393:1513" ph="/// If source shot and shootat shot are on the same row then  ... " />
+            <marker date="1572216821446" expanded="true" signature="1536:1587" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1591:1715" ph="/// If source shot and shootat shot are on the same column then  ... " />
+            <marker date="1572216821446" expanded="true" signature="1741:1798" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="1804:2005" ph="/// Private enumarator for AI states. currently there are two states, ... " />
+            <marker date="1572216821446" expanded="true" signature="2028:2300" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2034:2110" ph="/// The AI is searching for its next target ... " />
+            <marker date="1572216821446" expanded="true" signature="2127:2197" ph="/// The AI is trying to target a ship ... " />
+            <marker date="1572216821446" expanded="true" signature="2218:2283" ph="/// The AI is locked onto a ship ... " />
+            <marker date="1572216821446" expanded="true" signature="2552:2558" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2561:2823" ph="/// GenerateCoords will call upon the right methods to generate the appropriate shooting ... " />
+            <marker date="1572216821446" expanded="true" signature="2892:3554" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="2933:3041" ph="/* check which state the AI is in and uppon that choose which coordinate generation ... */" />
+            <marker date="1572216821446" expanded="true" signature="3068:3356" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="3557:3816" ph="/// TargetCoords is used when a ship has been hit and it will try and destroy ... " />
+            <marker date="1572216821446" expanded="true" signature="3872:3992" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="3995:4232" ph="/// SearchCoords will randomly generate shots within the grid as long as its not hit that tile already ... " />
+            <marker date="1572216821446" expanded="true" signature="4288:4446" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="4449:4850" ph="/// ProcessShot is able to process each shot that is made and call the right methods belonging ... " />
+            <marker date="1572216821446" expanded="true" signature="4926:5336" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="4954:5266" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="5339:5763" ph="/// ProcessDetroy is able to process the destroyed ships targets and remove _LastHit targets. ... " />
+            <marker date="1572216821446" expanded="true" signature="5821:6743" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="6073:6740" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="6098:6384" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="6133:6290" ph="/* Source is nnothing if the ship was originally hit in ... */" />
+            <marker date="1572216821446" expanded="true" signature="6315:6379" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="6494:6697" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="6584:6692" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="6746:7128" ph="/// RemoveShotsAround will remove targets that belong to the destroyed ship by checking if  ... " />
+            <marker date="1572216821446" expanded="true" signature="7179:7845" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="7233:7298" ph="/* create a new stack ... */" />
+            <marker date="1572216821446" expanded="true" signature="7333:7508" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="7532:7639" ph="/* clear the _Targets stack ... */" />
+            <marker date="1572216821446" expanded="true" signature="7673:7699" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="7848:8279" ph="/// ProcessHit gets the last hit location coordinates and will ask AddTarget to ... " />
+            <marker date="1572216821446" expanded="true" signature="8322:8734" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="8549:8597" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="8737:8963" ph="/// ReOrderTargets will optimise the targeting by re-orderin the stack that the targets are in. ... " />
+            <marker date="1572216821446" expanded="true" signature="8995:9372" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="9116:9173" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="9210:9369" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="9375:10024" ph="/// MoveToTopOfStack will re-order the stack by checkin the coordinates of each target ... " />
+            <marker date="1572216821446" expanded="true" signature="10076:10528" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="10230:10406" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="10330:10362" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="10441:10467" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="10499:10525" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="10531:10755" ph="/// AddTarget will add the targets it will shoot onto a stack ... " />
+            <marker date="1572216821446" expanded="true" signature="10801:11023" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="10935:11020" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="11028:11280" ph="/* ======================================================= ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Model/ISeaGrid.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding>
+            <marker date="1572216821446" expanded="false" signature="7:150" ph="..." />
+            <marker date="1572216821446" expanded="true" signature="151:307" ph="/// The ISeaGrid defines the read only interface of a Grid. This ... " />
+            <marker date="1572216821446" expanded="true" signature="333:1097" ph="{...}" />
+            <marker date="1572216821446" expanded="true" signature="381:452" ph="/// Indicates that the grid has changed. ... " />
+            <marker date="1572216821446" expanded="true" signature="484:788" ph="/// Provides access to the given row/column ... " />
+            <marker date="1572216821446" expanded="true" signature="833:1054" ph="/// Mark the indicated tile as shot. ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameState.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
+          <folding>
+            <marker date="1572216821442" expanded="false" signature="7:150" ph="..." />
+            <marker date="1572216821442" expanded="true" signature="151:326" ph="/// The GameStates represent the state of the Battleships game play. ... " />
+            <marker date="1572216821442" expanded="true" signature="349:1123" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="353:424" ph="/// The player is viewing the main menu. ... " />
+            <marker date="1572216821442" expanded="true" signature="445:515" ph="/// The player is viewing the game menu ... " />
+            <marker date="1572216821442" expanded="true" signature="536:611" ph="/// The player is looking at the high scores ... " />
+            <marker date="1572216821442" expanded="true" signature="634:709" ph="/// The player is altering the game settings ... " />
+            <marker date="1572216821442" expanded="true" signature="731:799" ph="/// Players are deploying their ships ... " />
+            <marker date="1572216821442" expanded="true" signature="814:899" ph="/// Players are attempting to locate each others ships ... " />
+            <marker date="1572216821442" expanded="true" signature="916:997" ph="/// One player has won, showing the victory screen ... " />
+            <marker date="1572216821442" expanded="true" signature="1013:1111" ph="/// The player has quit. Show ending credits and terminate the game ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-47">
+          <caret line="314" column="38" selection-start-line="314" selection-start-column="38" selection-end-line="314" selection-end-column="38" />
+          <folding>
+            <marker date="1572216821442" expanded="false" signature="7:169" ph="..." />
+            <marker date="1572216821442" expanded="true" signature="171:338" ph="/// The GameController is responsible for controlling the game, ... " />
+            <marker date="1572216821442" expanded="true" signature="373:9681" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="587:793" ph="/// Returns the current state of the game, indicating which screen is ... " />
+            <marker date="1572216821442" expanded="true" signature="832:868" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="871:1009" ph="/// Returns the human player. ... " />
+            <marker date="1572216821442" expanded="true" signature="1044:1073" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="1076:1223" ph="/// Returns the computer player. ... " />
+            <marker date="1572216821442" expanded="true" signature="1261:1287" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="1313:1533" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="1536:1673" ph="/// Starts a new game. ... " />
+            <marker date="1572216821442" expanded="true" signature="1705:2291" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="1850:2064" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="2294:2387" ph="/// Stops listening to the old game once a new game is started ... " />
+            <marker date="1572216821442" expanded="true" signature="2419:2580" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="2583:2806" ph="/// Listens to the game grids for any changes and redraws the screen ... " />
+            <marker date="1572216821442" expanded="true" signature="2870:2920" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="2999:3182" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="3024:3076" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="3262:3443" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="3287:3336" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="3446:3710" ph="/// Listens for attacks to be completed. ... " />
+            <marker date="1572216821442" expanded="true" signature="3783:5003" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="3893:3956" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="4054:5000" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="4440:4503" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="4538:4606" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="5006:5239" ph="/// Completes the deployment phase of the game and ... " />
+            <marker date="1572216821442" expanded="true" signature="5275:5416" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="5419:5699" ph="/// Gets the player to attack the indicated row and column. ... " />
+            <marker date="1572216821442" expanded="true" signature="5744:5863" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="5866:6013" ph="/// Gets the AI to attack. ... " />
+            <marker date="1572216821442" expanded="true" signature="6045:6164" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="6167:6461" ph="/// Checks the results of the attack and switches to ... " />
+            <marker date="1572216821442" expanded="true" signature="6521:6762" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="6549:6759" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="6765:7012" ph="/// Handles the user SwinGame. ... " />
+            <marker date="1572216821442" expanded="true" signature="7050:7818" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="7138:7775" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="7821:7992" ph="/// Draws the current state of the game to the screen. ... " />
+            <marker date="1572216821442" expanded="true" signature="8025:8749" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="8091:8679" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="8752:8936" ph="/// Move the game to a new state. The current state is maintained ... " />
+            <marker date="1572216821442" expanded="true" signature="8985:9046" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="9049:9193" ph="/// End the current state and add in the new state. ... " />
+            <marker date="1572216821442" expanded="true" signature="9245:9297" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="9300:9387" ph="/// Ends the current state, returning to the prior state ... " />
+            <marker date="1572216821442" expanded="true" signature="9425:9447" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="9450:9596" ph="/// Sets the difficulty for the next level of the game. ... " />
+            <marker date="1572216821442" expanded="true" signature="9648:9678" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MenuController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1920">
+          <caret line="140" column="23" selection-start-line="140" selection-start-column="23" selection-end-line="140" selection-end-column="23" />
+          <folding>
+            <marker date="1572216821442" expanded="false" signature="7:169" ph="..." />
+            <marker date="1572216821442" expanded="true" signature="171:364" ph="/// The menu controller handles the drawing and user interactions ... " />
+            <marker date="1572216821442" expanded="true" signature="393:9153" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="398:549" ph="/// The menu structure for the game. ... " />
+            <marker date="1572216821442" expanded="true" signature="603:792" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="620:671" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="688:732" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="749:788" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="1870:1971" ph="/// Handles the processing of user input when the main menu is showing ... " />
+            <marker date="1572216821442" expanded="true" signature="2013:2055" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="2058:2159" ph="/// Handles the processing of user input when the main menu is showing ... " />
+            <marker date="1572216821442" expanded="true" signature="2202:2339" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="2294:2336" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="2342:2502" ph="/// Handle input in the game menu. ... " />
+            <marker date="1572216821442" expanded="true" signature="2544:2586" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="2589:2961" ph="/// Handles input for the specified menu. ... " />
+            <marker date="1572216821442" expanded="true" signature="3032:3552" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="3080:3138" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="3193:3532" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="3267:3422" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="3359:3417" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="3442:3528" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="3555:3624" ph="/// Draws the main menu to the screen. ... " />
+            <marker date="1572216821442" expanded="true" signature="3659:3803" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="3665:3773" ph="/* Clears the Screen to Black ... */" />
+            <marker date="1572216821442" expanded="true" signature="3806:3874" ph="/// Draws the Game menu to the screen ... " />
+            <marker date="1572216821442" expanded="true" signature="3909:4050" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="3915:4020" ph="/* Clears the Screen to Black ... */" />
+            <marker date="1572216821442" expanded="true" signature="4053:4187" ph="/// Draws the settings menu to the screen. ... " />
+            <marker date="1572216821442" expanded="true" signature="4222:4398" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="4228:4335" ph="/* Clears the Screen to Black ... */" />
+            <marker date="1572216821442" expanded="true" signature="4401:4548" ph="/// Draw the buttons associated with a top level menu. ... " />
+            <marker date="1572216821442" expanded="true" signature="4591:4624" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="4627:5129" ph="/// Draws the menu at the indicated level. ... " />
+            <marker date="1572216821442" expanded="true" signature="5196:5907" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="5347:5904" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="5803:5900" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="5910:6141" ph="/// Determined if the mouse is over one of the button in the main menu. ... " />
+            <marker date="1572216821442" expanded="true" signature="6192:6238" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="6241:6575" ph="/// Checks if the mouse is over one of the buttons in a menu. ... " />
+            <marker date="1572216821442" expanded="true" signature="6648:6870" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="6873:7103" ph="/// A button has been clicked, perform the associated action. ... " />
+            <marker date="1572216821442" expanded="true" signature="7164:7389" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="7184:7386" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="7392:7535" ph="/// The main menu was clicked, perform the button's action. ... " />
+            <marker date="1572216821442" expanded="true" signature="7590:7986" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="7612:7983" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="7989:8133" ph="/// The setup menu was clicked, perform the button's action. ... " />
+            <marker date="1572216821442" expanded="true" signature="8189:8586" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="8211:8496" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="8589:8732" ph="/// The game menu was clicked, perform the button's action. ... " />
+            <marker date="1572216821442" expanded="true" signature="8787:9151" ph="{...}" />
+            <marker date="1572216821442" expanded="true" signature="8809:9148" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/GameLogic.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="57" selection-start-line="8" selection-start-column="57" selection-end-line="8" selection-end-column="57" />
+          <folding>
+            <marker date="1572218813816" expanded="true" signature="43:600" ph="{...}" />
+            <marker date="1572218813816" expanded="true" signature="72:598" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

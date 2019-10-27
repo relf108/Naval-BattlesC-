@@ -23,6 +23,10 @@ static class MenuController
 	/// These are the text captions for the menu items.
 	/// </remarks>
 	private static readonly string[][] _menuStructure = {
+		new string[]
+		{
+			"NEXT"
+		}, 
 		new string[] {
 			"PLAY",
 			"SETUP",
