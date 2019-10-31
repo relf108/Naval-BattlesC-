@@ -312,6 +312,7 @@ public static class GameController
 
 		switch (CurrentState) {
 			case GameState.ViewingMainMenu:
+				MenuController.DrawSetupMenu();
 				MenuController.DrawMainMenu();
 				break;
 			case GameState.ViewingGameMenu:

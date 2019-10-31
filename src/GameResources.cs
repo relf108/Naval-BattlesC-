@@ -155,7 +155,7 @@ public static class GameResources
 		SwinGame.Delay(100);
 		ShowMessage("Game loaded...", 5);
 		SwinGame.Delay(100);
-		EndLoadingScreen(width, height);
+		EndLoadingScreen(800, 600);
 	}
 
 	private static void ShowLoadingScreen()
@@ -234,7 +234,7 @@ public static class GameResources
 		SwinGame.FreeBitmap(_Animation);
 		SwinGame.FreeBitmap(_LoaderEmpty);
 		SwinGame.FreeBitmap(_LoaderFull);
-		//SwinGame.FreeSoundEffect(_StartSound);
+		SwinGame.FreeSoundEffect(_StartSound);
 		SwinGame.ChangeScreenSize(width, height);
 	}
 

@@ -26,7 +26,7 @@ static class MenuController
 		new string[]
 		{
 			"NEXT"
-		}, 
+		},
 		new string[] {
 			"PLAY",
 			"SETUP",
@@ -142,6 +142,13 @@ static class MenuController
 	/// <summary>
 	/// Draws the main menu to the screen.
 	/// </summary>
+	///
+	//SETUP_MENU_EXIT_BUTTON
+	public static void DrawSetupMenu()
+	{
+		DrawButtons(SETUP_MENU_EXIT_BUTTON);
+	}
+	
 	public static void DrawMainMenu()
 	{
 		//Clears the Screen to Black
