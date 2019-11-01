@@ -23,10 +23,6 @@ static class MenuController
 	/// These are the text captions for the menu items.
 	/// </remarks>
 	private static readonly string[][] _menuStructure = {
-		new string[]
-		{
-			"NEXT"
-		},
 		new string[] {
 			"PLAY",
 			"SETUP",
@@ -66,7 +62,7 @@ static class MenuController
 	private const int SETUP_MENU_MEDIUM_BUTTON = 1;
 	private const int SETUP_MENU_HARD_BUTTON = 2;
 
-	private const int SETUP_MENU_EXIT_BUTTON = 3;
+	private const int SETUP_MENU_EXIT_BUTTON = 2;
 	private const int GAME_MENU_RETURN_BUTTON = 0;
 	private const int GAME_MENU_SURRENDER_BUTTON = 1;
 
@@ -212,9 +208,12 @@ static class MenuController
 		for (i = 0; i <= _menuStructure[menu].Length - 1; i++) {
 			int btnLeft = 0;
 			btnLeft = MENU_LEFT + BUTTON_SEP * (i + xOffset);
+            Point2D pt = new Point2D();
+            pt.X = btnLeft;
+            pt.Y = btnTop;
 			//SwinGame.FillRectangle(Color.White, btnLeft, btnTop, BUTTON_WIDTH, BUTTON_HEIGHT)
 			SwinGame.DrawText(_menuStructure[menu][i], MENU_COLOR, Color.Black, GameResources.GameFont("Varsity"), FontAlignment.AlignCenter,
-				SwinGame.RectangleFrom(new Point2D(),BUTTON_WIDTH, BUTTON_HEIGHT));
+				SwinGame.RectangleFrom(pt ,BUTTON_WIDTH, BUTTON_HEIGHT));
 
 			if (SwinGame.MouseDown(MouseButton.LeftButton) & IsMouseOverMenu(i, level, xOffset)) {
 				SwinGame.DrawRectangle(HIGHLIGHT_COLOR, btnLeft, btnTop, BUTTON_WIDTH, BUTTON_HEIGHT);
